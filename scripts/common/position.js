@@ -1,0 +1,1 @@
+$(".position__description").hover(()=>{$(".description__content").stop(1,!0).delay(50).slideDown(),$(".description__title").addClass("title--active")},()=>{$(".description__content").stop(1,!0).delay(300).slideUp(),$(".description__title").removeClass("title--active")});

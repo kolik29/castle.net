@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>История создания</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="./style/wowanimate.css" />
+    <link rel="stylesheet" href="./style/magnific-popup.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./style/about.css" />
+    <script src="./scripts/extensions/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+  </head>
+  <body
+    class="page page--light page-about"
+    id="anchor"
+    onload="aboutSlider(); anchor();"
+  >
+    <header class="header-wrapper">
+      <header class="header @@mod" data-aos="fade-down">
+        <div class="header__container">
+          <button class="header__burger-btn" area-label="Открыть меню">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="header__logo logo">
+            <a class="logo__link" href="./index.html"
+              ><img
+                class="logo__image"
+                src="./img/header/logo/logo-min.svg"
+                alt="Никитский дворец"
+            /></a>
+          </div>
+          <nav
+            class="header__menu header__menu--left"
+            data-aos="fade-down"
+            data-aos-delay="200"
+          >
+            <ul class="header__list">
+              <li class="header__hovering menu__sub header__menu--active">
+                <a class="header__link" href="./about.html">О комплексе</a>
+                <ul class="menu__submenu">
+                  <li>
+                    <a class="header__link" href="./about.html"
+                      >История создания</a
+                    >
+                  </li>
+                  <li>
+                    <a class="header__link" href="./position.html"
+                      >Расположение</a
+                    >
+                  </li>
+                  <li>
+                    <a class="header__link" href="./blago.html"
+                      >Благоустройство</a
+                    >
+                  </li>
+                  <li>
+                    <a class="header__link" href="./infrastructure.html"
+                      >Инфраструктура</a
+                    >
+                  </li>
+                  <li>
+                    <a class="header__link" href="./build_video.html"
+                      >Ход строительства</a
+                    >
+                  </li>
+                  <li>
+                    <a class="header__link" href="./document_downl.html"
+                      >Документация</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li
+                class="header__hovering header__hovering--apartments menu__sub @@apart"
+              >
+                <a class="header__link menu__favorites" href="./favorites.html"
+                  >3</a
+                >
+                <a class="header__link" href="./flats.html"
+                  >Квартиры и апартаменты</a
+                >
+                <ul class="menu__submenu">
+                  <li>
+                    <a class="header__link" href="./flats.html"
+                      >Выбор квартиры</a
+                    >
+                  </li>
+                  <li>
+                    <a class="header__link" href="./parameters-selection.html"
+                      >Подбор по параметрам</a
+                    >
+                  </li>
+                  <li>
+                    <a class="header__link" href="./decorations.html"
+                      >Отделка</a
+                    >
+                  </li>
+                  <li>
+                    <a class="header__link" href="./repair.html"
+                      >Варианты ремонта</a
+                    >
+                  </li>
+                  <li>
+                    <a class="header__link" href="./404.html">Апартаменты</a>
+                  </li>
+                  <li>
+                    <a class="header__link" href="./parking.html">Паркинг</a>
+                  </li>
+                  <li>
+                    <a class="header__link" href="./404.html">Кладовые</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="header__hovering @@commerc">
+                <a class="header__link" href="./commercial.html"
+                  >Коммерческие помещения</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <nav
+            class="header__menu header__menu--right"
+            data-aos="fade-down"
+            data-aos-delay="200"
+          >
+            <ul class="header__list">
+              <li class="header__hovering menu__sub @@buy">
+                <a class="header__link" href="./shares.html">Как купить</a>
+                <ul class="menu__submenu">
+                  <li>
+                    <a class="header__link" href="./shares.html">Акции</a>
+                  </li>
+                  <li>
+                    <a class="header__link" href="./online.html">Онлайн</a>
+                  </li>
+                  <li>
+                    <a class="header__link" href="./mortgage.html">Ипотека</a>
+                  </li>
+                  <li>
+                    <a class="header__link" href="./one-payment.html"
+                      >Единовременная оплата</a
+                    >
+                  </li>
+                  <li>
+                    <a class="header__link" href="./capital.html"
+                      >Материнский капитал</a
+                    >
+                  </li>
+                  <li>
+                    <a class="header__link" href="./installment.html"
+                      >Рассрочка от застройщика</a
+                    >
+                  </li>
+                  <li>
+                    <a class="header__link" href="./military.html"
+                      >Военная ипотека</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="header__hovering">
+                <a class="header__link" href="./404.html">Контакты</a>
+              </li>
+              <li class="header__hovering">
+                <a
+                  class="header__link header__menu--phone"
+                  href="tel:74952728139"
+                  >+7 (495) 272-81-39</a
+                >
+              </li>
+              <ul class="header__messanger">
+                <li>
+                  <a href="#">
+                    <svg class="header__messanger--whatsapp">
+                      <use
+                        xlink:href="./img/header/header-sprite.svg#whatsapp"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <svg class="header__messanger--tg">
+                      <use
+                        xlink:href="./img/header/header-sprite.svg#telegram"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+              <ul class="header__social">
+                <li>
+                  <a href="#">
+                    <svg class="header__social--facebook">
+                      <use
+                        xlink:href="./img/header/header-sprite.svg#facebook"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <svg class="header__social--instagram">
+                      <use
+                        xlink:href="./img/header/header-sprite.svg#instagram"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <svg class="header__social--vk">
+                      <use xlink:href="./img/header/header-sprite.svg#vk"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </ul>
+          </nav>
+        </div>
+        <section class="header__burger-menu sideout-menu">
+          <button
+            class="sideout-menu__close"
+            area-label="Закрыть меню"
+          ></button>
+          <nav class="sideout-menu__block">
+            <ul class="sideout-menu__list">
+              <li class="sideout-menu__item">
+                <a class="sideout-menu__link" href="./about.html"
+                  >О комплексе</a
+                >
+              </li>
+              <li class="sideout-menu__item">
+                <a class="sideout-menu__link" href="./flats.html"
+                  >Квартиры и апартаменты</a
+                >
+              </li>
+              <li class="sideout-menu__item">
+                <a class="sideout-menu__link" href="./commercial.html"
+                  >Коммерческие помещения</a
+                >
+              </li>
+              <li class="sideout-menu__item">
+                <a class="sideout-menu__link" href="./shares.html"
+                  >Как купить</a
+                >
+              </li>
+              <li class="sideout-menu__item">
+                <a class="sideout-menu__link" href="./politics.html"
+                  >Контакты</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <nav class="sideout-menu__block sideout-menu__block--middle">
+            <h3 class="sideout-menu__title">Телефон</h3>
+            <ul class="sideout-menu__list">
+              <li class="sideout-menu__item">
+                <a
+                  class="sideout-menu__link sideout-menu__link--phone"
+                  href="tel:74952728139"
+                  >+7 (495) 272-81-39</a
+                >
+              </li>
+              <ul class="sideout-menu__messanger">
+                <li class="sideout-menu__item">
+                  <a href="#">
+                    <svg class="sideout-menu__messanger--whatsapp">
+                      <use
+                        xlink:href="./img/header/header-sprite.svg#whatsapp"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="sideout-menu__item">
+                  <a href="#">
+                    <svg class="sideout-menu__messanger--tg">
+                      <use
+                        xlink:href="./img/header/header-sprite.svg#telegram"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </ul>
+          </nav>
+          <nav class="sideout-menu__block">
+            <h3 class="sideout-menu__title">Мы в социальных сетях</h3>
+            <ul class="sideout-menu__social">
+              <li class="sideout-menu__item">
+                <a href="#">
+                  <svg class="sideout-menu__social--facebook">
+                    <use
+                      xlink:href="./img/header/header-sprite.svg#facebook"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="sideout-menu__item">
+                <a href="#">
+                  <svg class="sideout-menu__social--instagram">
+                    <use
+                      xlink:href="./img/header/header-sprite.svg#instagram"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="sideout-menu__item">
+                <a href="#">
+                  <svg class="sideout-menu__social--vk">
+                    <use xlink:href="./img/header/header-sprite.svg#vk"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </section>
+      </header>
+      <nav class="submenu" data-aos="fade-down">
+        <ul class="submenu__list">
+          <li class="submenu__item--active">
+            <a class="submenu__link" href="./about.html">История создания</a>
+          </li>
+          <li @@position>
+            <a class="submenu__link" href="./position.html">Расположение</a>
+          </li>
+          <li @@yard>
+            <a class="submenu__link" href="./blago.html">Благоустройство</a>
+          </li>
+          <li @@infrastructure>
+            <a class="submenu__link" href="./infrastructure.html"
+              >Инфраструктура</a
+            >
+          </li>
+          <li @@progress>
+            <a class="submenu__link" href="./build_video.html"
+              >Ход строительства</a
+            >
+          </li>
+          <li @@documentation>
+            <a class="submenu__link" href="./document_downl.html"
+              >Документация</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <img
+        class="header__picture wow fadeInLeft"
+        src="./img/about/village.jpg"
+        load="lazy"
+      />
+      <article class="header__legend legend">
+        <div class="legend__block wow fadeInRight" data-wow-delay="0.8s">
+          <p class="legend__title legend__title--top">История создания</p>
+          <h2 class="legend__title">Легенда о Никитском</h2>
+          <p class="legend__text">
+            Посёлок Никита раскинулся в «лучшей жемчужине короны», на Южном
+            берегу волшебного полуострова, преподнесённого императрице Екатерине
+            II великими полководцами Г.А. Потёмкиным, А.В. Суворовым и Ф.Ф.
+            Ушаковым в знак победы над турками.
+          </p>
+          <p class="legend__text">
+            По замыслу великой императрицы особый успех в Крыму или Таврии
+            должны были обрести ботанические сады благодаря уникальным
+            климатическим условиям полуострова. Указом царского двора в 1812
+            году в Никите был заложен ботанический сад. Он был спланирован и
+            разбит на территории посёлка под руководством Х. Стевена.
+          </p>
+          <img
+            class="legend__picture wow fadeInUp"
+            src="./img/about/ekaterina.jpg"
+            load="lazy"
+            data-wow-delay="1.6s"
+          />
+        </div>
+      </article>
+    </header>
+    <main class="about">
+      <section class="about__position position">
+        <p class="position__text wow fadeInUp">
+          Это время было нелёгким для Российской империи, храбрые полководцы
+          сражались с войсками Наполеона. Среди них был Николай Николаевич
+          Раевский, потомственный дворянин и почётный кавалер ордена Святого
+          Георгия, который был ошеломлён роскошью Франции и мечтал воплотить её
+          в российских реалиях, построив Дворец Раевских.<br /><br />Его выбор
+          пал на Тавриду или прославленную русскую Ривьеру, объединившую в себе
+          морской бриз, горный целебный воздух, уникальную флору и фауну.
+          Раевский мечтал о дворце, находящимся на высоте 130 метров над уровнем
+          моря, обладающим собственным живописным спуском на пляж.
+        </p>
+        <img
+          class="position__img wow fadeInUp"
+          src="./img/about/raevskiy.jpg"
+          load="lazy"
+        />
+      </section>
+      <section class="about__pushkin pushkin">
+        <img
+          class="pushkin__home wow fadeInLeft"
+          src="./img/about/pushkin-home.jpg"
+        />
+        <div class="pushkin__biography biography wow fadeInRight">
+          <p class="biography__text">
+            И он отправляется с семьёй в Крым, в путешествие берёт с собой
+            Пушкина, который в итоге рушит все планы и мечты. Генерал-губернатор
+            Воронцов запрещает строительство дворца, главного украшения юга
+            Таврии, которое должно было увековечить род Раевских из-за ревности
+            и мести. Жена Воронцова отдала предпочтение поэту, а чиновник решил
+            отплатить за это его покровителю.<br /><br />Так, строительство
+            дворца в Никите было отложена на долгих 150 лет, но фортуна вновь
+            вдохнула жизнь в мечту генерала. В 2019 году было принято решение
+            воплотить мечту в реальность и построить величественный Жилой
+            комплекс «Никитский Дворец».
+          </p>
+          <img
+            class="biography__image"
+            src="./img/about/pushkin.png"
+            width="176px"
+            height="243px"
+            load="lazy"
+          />
+        </div>
+      </section>
+      <div class="about__tour-demo tour-demo">
+        <div class="tour-demo__slider slider wow fadeInUp">
+          <div class="slider__controls">
+            <button
+              class="slider__button swiper-button-prev slider__button--about"
+            >
+              <img src="./img/decorations/arrow-left.svg" />
+            </button>
+            <p
+              class="slider__slides swiper-pagination slider__slides--about"
+            ></p>
+            <button
+              class="slider__button swiper-button-next slider__button--about"
+            >
+              <img src="./img/decorations/arrow-right.svg" />
+            </button>
+          </div>
+          <div id="about" class="swiper-container slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./img/about/botany/1.jpg" load="lazy" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/about/botany/2.jpg" load="lazy" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/about/botany/3.jpg" load="lazy" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/about/botany/4.jpg" load="lazy" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/about/botany/5.jpg" load="lazy" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="tour-demo__legend legend wow fadeInRight"
+          data-wow-delay="0.8s"
+        >
+          <div class="legend__block">
+            <p class="legend__title legend__title--top">История создания</p>
+            <p class="legend__title">Легенда о Никитском</p>
+            <p class="legend__text">
+              Крымский климат был буквально признан восьмым чудом света, который
+              с XIX века привлекал на полуостров все больше гостей. Визитными
+              карточками полуострова тех времён были «Ласточкино гнездо»,
+              Массандровский и Хрустальный дворец.
+            </p>
+            <p class="legend__text">
+              Сегодня в Крыму, буквально в двух шагах от Никитского
+              ботанического сада воссоздана легенда — «Никитский Дворец»,
+              который будет украшать южное побережье Тавриды, где он и должен
+              был располагаться согласно историческим документам.
+            </p>
+            <p class="legend__text">
+              Квартиры, расположенные в этом уникальном месте, являются символом
+              благополучия и комфорта.
+            </p>
+          </div>
+        </div>
+      </div>
+      <section class="about__call">
+        <p class="call__text">
+          Подобрать квартиру в «Никитском дворце» Вы можете уже сейчас!
+        </p>
+        <a
+          class="call__btn chooseFlats chooseFlats--gold wow fadeInUp"
+          href="./flats.html"
+          >Выбрать свою квартиру
+          <svg class="circle" viewbox="25 25 50 50">
+            <defs>
+              <linearGradient id="grad">
+                <stop offset="5%" stop-color="#c2a07c" stop-opacity="0" />
+                <stop offset="100%" stop-color="#c2a07c" />
+              </linearGradient>
+            </defs>
+            <circle
+              class="circle__eclipse"
+              cx="50"
+              cy="50"
+              r="20"
+              fill="none"
+              stroke-width="1"
+              stroke="url(#grad)"
+            ></circle>
+          </svg>
+        </a>
+      </section>
+      <a href="#anchor" class="anchor"></a>
+    </main>
+    <section class="fixed-buttons">
+      <button class="fixed-buttons__btn callback"></button>
+      <button class="fixed-buttons__btn"></button>
+    </section>
+
+    <section id="cookie" class="cookie">
+      <div class="cookie__text">
+        <p>
+          Информируем вас о сборе метаданных (cookie, ip-адрес и местоположение)
+          для корректного функционирования сайта.
+        </p>
+        <p>
+          Если вы согласны с нашей
+          <a
+            href="./politics.html"
+            style="text-decoration: underline; color: #e4bd94"
+            >Политикой конфиденциальности</a
+          >, просто продолжайте пользоваться сайтом.
+        </p>
+      </div>
+      <button class="cookie__btn btn btn--reverse">Соглашаюсь</button>
+    </section>
+    <section id="modal_callback" class="modal">
+      <div class="modal__block">
+        <div class="modal__close"></div>
+        <div id="callback" class="modal__inner">
+          <h2 class="modal__title">Обратный звонок</h2>
+          <form>
+            <label class="modal__input"
+              ><input class="modal__input" name="name" type="text" />
+              <span>Ваше имя</span>
+            </label>
+            <label class="modal__input"
+              ><input
+                class="modal__input tel"
+                type="tel"
+                name="phone"
+                placeholder="+7 (XXX) XXX-XX-XX"
+              />
+              <span>Ваш телефон</span>
+            </label>
+            <p class="modal__timing-text">Укажите удобное время для звонка</p>
+            <div class="modal__timing">
+              <label
+                ><img src="./img/modals/date.svg" alt="Дата" />
+                <input class="date" type="text" placeholder="Дата"
+              /></label>
+              <label
+                ><img src="./img/modals/time.svg" alt="Время" />
+                <input class="time" type="text" placeholder="Время"
+              /></label>
+            </div>
+            <input
+              class="modal__submit"
+              type="submit"
+              value="Перезвоните мне"
+            />
+            <p class="modal__submit-text">
+              Отправляя эту заявку, вы даете согласие на обработку персональных
+              данных
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script src="./scripts/extensions/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./scripts/extensions/jquery.maskedinput.min.js"></script>
+    <script src="./scripts/extensions/jquery.maphilight.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/common/aboutSlider.js"></script>
+    <script src="./scripts/common/anchor.js"></script>
+  </body>
+</html>

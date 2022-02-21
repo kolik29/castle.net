@@ -1,0 +1,1 @@
+function aboutSlider(){new Swiper("#about.swiper-container",{direction:"horizontal",speed:400,pagination:{el:".slider__slides--about",type:"fraction"},navigation:{nextEl:".swiper-button-next.slider__button--about",prevEl:".swiper-button-prev.slider__button--about"}})}

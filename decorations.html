@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Отделка</title><link rel="stylesheet" href="./style/aos.css"><link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"><link rel="stylesheet" href="./style/magnific-popup.css"><link rel="stylesheet" href="./style/decorations.css"></head>
+  <body class="page page--light dec-body" onload="decorationSlider()">
+    <header class="header header--light" data-aos="fade-down">
+      <div class="header__container">
+        <button class="header__burger-btn" area-label="Открыть меню">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="header__logo logo">
+          <a class="logo__link" href="./index.html"><img class="logo__image" src="./img/header/logo/logo-min-gold.svg" alt="Никитский дворец"></a>
+        </div>
+        <nav class="header__menu header__menu--left" data-aos="fade-down" data-aos-delay="200">
+          <ul class="header__list">
+            <li class="header__hovering menu__sub @@about">
+              <a class="header__link" href="./about.html">О комплексе</a>
+              <ul class="menu__submenu">
+                <li>
+                  <a class="header__link" href="./about.html">История создания</a>
+                </li>
+                <li>
+                  <a class="header__link" href="./position.html">Расположение</a>
+                </li>
+                <li>
+                  <a class="header__link" href="./blago.html">Благоустройство</a>
+                </li>
+                <li>
+                  <a class="header__link" href="./infrastructure.html">Инфраструктура</a>
+                </li>
+                <li>
+                  <a class="header__link" href="./build_video.html">Ход строительства</a>
+                </li>
+                <li>
+                  <a class="header__link" href="./document_downl.html">Документация</a>
+                </li>
+              </ul>
+            </li>
+            <li class="header__hovering header__hovering--apartments menu__sub header__menu--active">
+              <a class="header__link menu__favorites" href="./favorites.html">3</a>
+              <a class="header__link" href="./flats.html">Квартиры и апартаменты</a>
+              <ul class="menu__submenu">
+                <li>
+                  <a class="header__link" href="./flats.html">Выбор квартиры</a>
+                </li>
+                <li>
+                  <a class="header__link" href="./parameters-selection.html">Подбор по параметрам</a>
+                </li>
+                <li>
+                  <a class="header__link" href="./decorations.html">Отделка</a>
+                </li>
+                <li>
+                  <a class="header__link" href="./repair.html">Варианты ремонта</a>
+                </li>
+                <li>
+                  <a class="header__link" href="./404.html">Апартаменты</a>
+                </li>
+                <li>
+                  <a class="header__link" href="./parking.html">Паркинг</a>
+                </li>
+                <li>
+                  <a class="header__link" href="./404.html">Кладовые</a>
+                </li>
+              </ul>
+            </li>
+            <li class="header__hovering @@commerc">
+              <a class="header__link" href="./commercial.html">Коммерческие помещения</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="header__menu header__menu--right" data-aos="fade-down" data-aos-delay="200">
+          <ul class="header__list">
+            <li class="header__hovering menu__sub @@buy">
+              <a class="header__link" href="./shares.html">Как купить</a>
+              <ul class="menu__submenu">
+                <li>
+                  <a class="header__link" href="./shares.html">Акции</a>
+                </li>
+                <li>
+                  <a class="header__link" href="./online.html">Онлайн</a>
+                </li>
+                <li>
+                  <a class="header__link" href="./mortgage.html">Ипотека</a>
+                </li>
+                <li>
+                  <a class="header__link" href="./one-payment.html">Единовременная оплата</a>
+                </li>
+                <li>
+                  <a class="header__link" href="./capital.html">Материнский капитал</a>
+                </li>
+                <li>
+                  <a class="header__link" href="./installment.html">Рассрочка от застройщика</a>
+                </li>
+                <li>
+                  <a class="header__link" href="./military.html">Военная ипотека</a>
+                </li>
+              </ul>
+            </li>
+            <li class="header__hovering">
+              <a class="header__link" href="./404.html">Контакты</a>
+            </li>
+            <li class="header__hovering">
+              <a class="header__link header__menu--phone" href="tel:74952728139">+7 (495) 272-81-39</a>
+            </li>
+            <ul class="header__messanger">
+              <li>
+                <a href="#">
+                  <svg class="header__messanger--whatsapp">
+                    <use xlink: href="./img/header/header-sprite.svg#whatsapp"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="header__messanger--tg">
+                    <use xlink: href="./img/header/header-sprite.svg#telegram"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <ul class="header__social">
+              <li>
+                <a href="#">
+                  <svg class="header__social--facebook">
+                    <use xlink: href="./img/header/header-sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="header__social--instagram">
+                    <use xlink: href="./img/header/header-sprite.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="header__social--vk">
+                    <use xlink: href="./img/header/header-sprite.svg#vk"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </ul>
+        </nav>
+      </div>
+      <section class="header__burger-menu sideout-menu">
+        <button class="sideout-menu__close" area-label="Закрыть меню"></button>
+        <nav class="sideout-menu__block">
+          <ul class="sideout-menu__list">
+            <li class="sideout-menu__item">
+              <a class="sideout-menu__link" href="./about.html">О комплексе</a>
+            </li>
+            <li class="sideout-menu__item">
+              <a class="sideout-menu__link" href="./flats.html">Квартиры и апартаменты</a>
+            </li>
+            <li class="sideout-menu__item">
+              <a class="sideout-menu__link" href="./commercial.html">Коммерческие помещения</a>
+            </li>
+            <li class="sideout-menu__item">
+              <a class="sideout-menu__link" href="./shares.html">Как купить</a>
+            </li>
+            <li class="sideout-menu__item">
+              <a class="sideout-menu__link" href="./politics.html">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="sideout-menu__block sideout-menu__block--middle">
+          <h3 class="sideout-menu__title">Телефон</h3>
+          <ul class="sideout-menu__list">
+            <li class="sideout-menu__item">
+              <a class="sideout-menu__link sideout-menu__link--phone" href="tel:74952728139">+7 (495) 272-81-39</a>
+            </li>
+            <ul class="sideout-menu__messanger">
+              <li class="sideout-menu__item">
+                <a href="#">
+                  <svg class="sideout-menu__messanger--whatsapp">
+                    <use xlink: href="./img/header/header-sprite.svg#whatsapp"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="sideout-menu__item">
+                <a href="#">
+                  <svg class="sideout-menu__messanger--tg">
+                    <use xlink: href="./img/header/header-sprite.svg#telegram"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </ul>
+        </nav>
+        <nav class="sideout-menu__block">
+          <h3 class="sideout-menu__title">Мы в социальных сетях</h3>
+          <ul class="sideout-menu__social">
+            <li class="sideout-menu__item">
+              <a href="#">
+                <svg class="sideout-menu__social--facebook">
+                  <use xlink: href="./img/header/header-sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="sideout-menu__item">
+              <a href="#">
+                <svg class="sideout-menu__social--instagram">
+                  <use xlink: href="./img/header/header-sprite.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="sideout-menu__item">
+              <a href="#">
+                <svg class="sideout-menu__social--vk">
+                  <use xlink: href="./img/header/header-sprite.svg#vk"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+    <nav class="submenu" data-aos="fade-down">
+      <ul class="submenu__list">
+        <li @@flat>
+          <a class="submenu__link" href="./flats.html">Выбор квартиры</a>
+        </li>
+        <li @@select>
+          <a class="submenu__link" href="./parameters-selection.html">Подбор по параметрам</a>
+        </li>
+        <li class="submenu__item--active">
+          <a class="submenu__link" href="./decorations.html">Отделка</a>
+        </li>
+        <li @@repair>
+          <a class="submenu__link" href="./repair.html">Варианты ремонта</a>
+        </li>
+        <li @@apart>
+          <a class="submenu__link" href=". / 404.html">Апартаменты</a>
+        </li>
+        <li @@park>
+          <a class="submenu__link" href="./parking.html">Паркинг</a>
+        </li>
+        <li @@clad>
+          <a class="submenu__link" href="./404.html">Кладовые</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="decoration-bg"></div>
+    <main class="decorations" data-aos="zoom-in" data-aos-delay="400" data-aos-duration="1000">
+      <h1 class="decorations__title" data-aos="fade-down" data-aos-delay="800" data-aos-duration="1000">Варианты предчистовой отделки</h1>
+      <section class="decorations__column" data-aos="fade-right" data-aos-delay="800" data-aos-duration="1000">
+        <div class="slider">
+          <div id="black" class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="./img/decorations/rough/1.webp" alt="Пример отделки"></div>
+              <div class="swiper-slide"><img src="./img/decorations/rough/2.webp" alt="Пример отделки"></div>
+              <div class="swiper-slide"><img src="./img/decorations/rough/3.webp" alt="Пример отделки"></div>
+              <div class="swiper-slide"><img src="./img/decorations/rough/4.webp" alt="Пример отделки"></div>
+              <div class="swiper-slide"><img src="./img/decorations/rough/5.webp" alt="Пример отделки"></div>
+            </div>
+          </div>
+          <div class="slider__title">
+            <h2 class="slider__text">Черновая</h2>
+            <div class="slider__controls">
+              <button class="slider__button swiper-button-prev slider__button--black"><img src="./img/decorations/arrow-left.svg"></button>
+              <p class="slider__slides swiper-pagination slider__slides--black"></p>
+              <button class="slider__button swiper-button-next slider__button--black"><img src="./img/decorations/arrow-right.svg"></button>
+            </div>
+          </div>
+          <article class="slider__info">
+            <p>
+              Подготовленное помещение к&nbsp;финишному декоративному оформлению. Возведены межкомнатные перегородки из&nbsp;стеновых газобетонных камней 100&nbsp;мм, установлены входные двери, двухкамерные стеклопакеты с&nbsp;энергосберегающим стеклом и&nbsp;&laquo;теплый&raquo; алюминиевый профиль в&nbsp;оконно-дверных конструкциях.
+            </p>
+            <p>
+              Проведена разводка систем водоснабжения и&nbsp;канализации к&nbsp;точкам подключения.
+              Радиаторная система отопления подключена к автономной крышной котельной, электричество заведено в квартиру.
+            </p>
+          </article>
+        </div>
+      </section>
+      <section class="decorations__column" data-aos="fade-left" data-aos-delay="800" data-aos-duration="1000">
+        <div class="slider">
+          <div id="white" class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="./img/decorations/whitebox/1.webp" alt="Пример отделки"></div>
+              <div class="swiper-slide"><img src="./img/decorations/whitebox/2.webp" alt="Пример отделки"></div>
+              <div class="swiper-slide"><img src="./img/decorations/whitebox/3.webp" alt="Пример отделки"></div>
+              <div class="swiper-slide"><img src="./img/decorations/whitebox/4.webp" alt="Пример отделки"></div>
+              <div class="swiper-slide"><img src="./img/decorations/whitebox/5.webp" alt="Пример отделки"></div>
+            </div>
+          </div>
+          <div class="slider__title">
+            <h2 class="slider__text">White box</h2>
+            <div class="slider__controls">
+              <button class="slider__button swiper-button-prev slider__button--white"><img src="./img/decorations/arrow-left.svg"></button>
+              <p class="slider__slides swiper-pagination slider__slides--white"></p>
+              <button class="slider__button swiper-button-next slider__button--white"><img src="./img/decorations/arrow-right.svg"></button>
+            </div>
+          </div>
+          <article class="slider__info">
+            <p>Начиная от&nbsp;6&nbsp;этажа и&nbsp;выше квартиры выполнены с&nbsp;отделкой White box.</p>
+            <p>
+              Отделка включает в&nbsp;себя бетонную цементно-песчаную стяжку пола 50&nbsp;мм по&nbsp;звукоизоляционному слою, готовую для укладки финишного покрытия.
+              Выравнивание откосов в&nbsp;оконно-дверных конструкциях, грунтовку и&nbsp;гипсовую штукатурку стен.
+            </p>
+            <p>
+              Подготовку потолков, проведение водопровода, канализации и&nbsp;системы отопления.
+            </p>
+          </article>
+        </div>
+      </section>
+      <div class="decorations__row">
+        <a class="chooseFlats chooseFlats--gold choose" href="./flats.html">Выбрать свою квартиру
+          <svg class="circle" viewbox="25 25 50 50">
+            <defs>
+              <linearGradient id="grad"><stop offset="5%" stop-color="#c2a07c" stop-opacity="0"/><stop offset="100%" stop-color="#c2a07c"/></linearGradient>
+            </defs>
+            <circle class="circle__eclipse" cx="50" cy="50" r="20" fill="none" stroke-width="1" stroke="url(#grad)"></circle>
+          </svg>
+        </a>
+      </div>
+    </main>
+    <section class="fixed-buttons">
+      <button class="fixed-buttons__btn callback"></button>
+      <button class="fixed-buttons__btn"></button>
+    </section>
+    
+    <section id="cookie" class="cookie">
+      <div class="cookie__text">
+        <p>
+          Информируем вас о сборе метаданных (cookie, ip-адрес и местоположение) для корректного функционирования сайта.
+        </p>
+        <p>
+          Если вы согласны с нашей 
+          <a href="./politics.html" style="text-decoration: underline; color: #E4BD94;">Политикой конфиденциальности</a>,
+          просто продолжайте пользоваться сайтом.
+        </p>
+      </div>
+      <button class="cookie__btn btn btn--reverse">Соглашаюсь</button>
+    </section>
+    <section id="modal_callback" class="modal">
+      <div class="modal__block">
+        <div class="modal__close"></div>
+        <div id="callback" class="modal__inner">
+          <h2 class="modal__title">Обратный звонок</h2>
+          <form>
+            <label class="modal__input"><input class="modal__input" name="name" type="text">
+              <span>Ваше имя</span>
+            </label>
+            <label class="modal__input"><input class="modal__input tel" type="tel" name="phone" placeholder=" + 7 (XXX) XXX-XX-XX">
+              <span>Ваш телефон</span>
+            </label>
+            <p class="modal__timing-text">Укажите удобное время для звонка</p>
+            <div class="modal__timing">
+              <label><img src="./img/modals/date.svg" alt="Дата">
+                <input class="date" type="text" placeholder="Дата"></label>
+              <label><img src="./img/modals/time.svg" alt="Время">
+                <input class="time" type="text" placeholder="Время"></label>
+            </div><input class="modal__submit" type="submit" value="Перезвоните мне"><p class="modal__submit-text">Отправляя эту заявку, вы даете согласие на обработку персональных данных</p>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script src="./scripts/extensions/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./scripts/extensions/jquery.maskedinput.min.js"></script>
+    <script src="./scripts/extensions/jquery.maphilight.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/common/decorationSlider.js"></script>
+  </body>
+</html>
+

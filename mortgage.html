@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Никитский дворец</title><link rel="stylesheet" href="./style/nouislider.min.css"><link rel="stylesheet" href="./style/magnific-popup.css"><link rel="stylesheet" href="./style/aos.css"><link rel="stylesheet" href="./style/mortgage.css"></head>
+  <body class="page page--light" onload="mortgageRanges(); banksSelection()">
+    <div class="mortgage-bg"></div>
+    <header class="header header--light" data-aos="fade-down">
+      <div class="header__container">
+        <button class="header__burger-btn" area-label="Открыть меню">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="header__logo logo">
+          <a class="logo__link" href="./index.html"><img class="logo__image" src="./img/header/logo/logo-min-gold.svg" alt="Никитский дворец"></a>
+        </div>
+        <nav class="header__menu header__menu--left" data-aos="fade-down" data-aos-delay="200">
+          <ul class="header__list">
+            <li class="header__hovering menu__sub @@about">
+              <a class="header__link" href="./about.html">О комплексе</a>
+              <ul class="menu__submenu">
+                <li>
+                  <a class="header__link" href="./about.html">История создания</a>
+                </li>
+                <li>
+                  <a class="header__link" href="./position.html">Расположение</a>
+                </li>
+                <li>
+                  <a class="header__link" href="./blago.html">Благоустройство</a>
+                </li>
+                <li>
+                  <a class="header__link" href="./infrastructure.html">Инфраструктура</a>
+                </li>
+                <li>
+                  <a class="header__link" href="./build_video.html">Ход строительства</a>
+                </li>
+                <li>
+                  <a class="header__link" href="./document_downl.html">Документация</a>
+                </li>
+              </ul>
+            </li>
+            <li class="header__hovering header__hovering--apartments menu__sub @@apart">
+              <a class="header__link menu__favorites" href="./favorites.html">3</a>
+              <a class="header__link" href="./flats.html">Квартиры и апартаменты</a>
+              <ul class="menu__submenu">
+                <li>
+                  <a class="header__link" href="./flats.html">Выбор квартиры</a>
+                </li>
+                <li>
+                  <a class="header__link" href="./parameters-selection.html">Подбор по параметрам</a>
+                </li>
+                <li>
+                  <a class="header__link" href="./decorations.html">Отделка</a>
+                </li>
+                <li>
+                  <a class="header__link" href="./repair.html">Варианты ремонта</a>
+                </li>
+                <li>
+                  <a class="header__link" href="./404.html">Апартаменты</a>
+                </li>
+                <li>
+                  <a class="header__link" href="./parking.html">Паркинг</a>
+                </li>
+                <li>
+                  <a class="header__link" href="./404.html">Кладовые</a>
+                </li>
+              </ul>
+            </li>
+            <li class="header__hovering @@commerc">
+              <a class="header__link" href="./commercial.html">Коммерческие помещения</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="header__menu header__menu--right" data-aos="fade-down" data-aos-delay="200">
+          <ul class="header__list">
+            <li class="header__hovering menu__sub header__menu--active">
+              <a class="header__link" href="./shares.html">Как купить</a>
+              <ul class="menu__submenu">
+                <li>
+                  <a class="header__link" href="./shares.html">Акции</a>
+                </li>
+                <li>
+                  <a class="header__link" href="./online.html">Онлайн</a>
+                </li>
+                <li>
+                  <a class="header__link" href="./mortgage.html">Ипотека</a>
+                </li>
+                <li>
+                  <a class="header__link" href="./one-payment.html">Единовременная оплата</a>
+                </li>
+                <li>
+                  <a class="header__link" href="./capital.html">Материнский капитал</a>
+                </li>
+                <li>
+                  <a class="header__link" href="./installment.html">Рассрочка от застройщика</a>
+                </li>
+                <li>
+                  <a class="header__link" href="./military.html">Военная ипотека</a>
+                </li>
+              </ul>
+            </li>
+            <li class="header__hovering">
+              <a class="header__link" href="./404.html">Контакты</a>
+            </li>
+            <li class="header__hovering">
+              <a class="header__link header__menu--phone" href="tel:74952728139">+7 (495) 272-81-39</a>
+            </li>
+            <ul class="header__messanger">
+              <li>
+                <a href="#">
+                  <svg class="header__messanger--whatsapp">
+                    <use xlink:href="./img/header/header-sprite.svg#whatsapp"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="header__messanger--tg">
+                    <use xlink:href="./img/header/header-sprite.svg#telegram"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <ul class="header__social">
+              <li>
+                <a href="#">
+                  <svg class="header__social--facebook">
+                    <use xlink:href="./img/header/header-sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="header__social--instagram">
+                    <use xlink:href="./img/header/header-sprite.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="header__social--vk">
+                    <use xlink:href="./img/header/header-sprite.svg#vk"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </ul>
+        </nav>
+      </div>
+      <section class="header__burger-menu sideout-menu">
+        <button class="sideout-menu__close" area-label="Закрыть меню"></button>
+        <nav class="sideout-menu__block">
+          <ul class="sideout-menu__list">
+            <li class="sideout-menu__item">
+              <a class="sideout-menu__link" href="./about.html">О комплексе</a>
+            </li>
+            <li class="sideout-menu__item">
+              <a class="sideout-menu__link" href="./flats.html">Квартиры и апартаменты</a>
+            </li>
+            <li class="sideout-menu__item">
+              <a class="sideout-menu__link" href="./commercial.html">Коммерческие помещения</a>
+            </li>
+            <li class="sideout-menu__item">
+              <a class="sideout-menu__link" href="./shares.html">Как купить</a>
+            </li>
+            <li class="sideout-menu__item">
+              <a class="sideout-menu__link" href="./politics.html">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="sideout-menu__block sideout-menu__block--middle">
+          <h3 class="sideout-menu__title">Телефон</h3>
+          <ul class="sideout-menu__list">
+            <li class="sideout-menu__item">
+              <a class="sideout-menu__link sideout-menu__link--phone" href="tel:74952728139">+7 (495) 272-81-39</a>
+            </li>
+            <ul class="sideout-menu__messanger">
+              <li class="sideout-menu__item">
+                <a href="#">
+                  <svg class="sideout-menu__messanger--whatsapp">
+                    <use xlink:href="./img/header/header-sprite.svg#whatsapp"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="sideout-menu__item">
+                <a href="#">
+                  <svg class="sideout-menu__messanger--tg">
+                    <use xlink:href="./img/header/header-sprite.svg#telegram"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </ul>
+        </nav>
+        <nav class="sideout-menu__block">
+          <h3 class="sideout-menu__title">Мы в социальных сетях</h3>
+          <ul class="sideout-menu__social">
+            <li class="sideout-menu__item">
+              <a href="#">
+                <svg class="sideout-menu__social--facebook">
+                  <use xlink:href="./img/header/header-sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="sideout-menu__item">
+              <a href="#">
+                <svg class="sideout-menu__social--instagram">
+                  <use xlink:href="./img/header/header-sprite.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="sideout-menu__item">
+              <a href="#">
+                <svg class="sideout-menu__social--vk">
+                  <use xlink:href="./img/header/header-sprite.svg#vk"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+    <nav class="submenu" data-aos="fade-down">
+      <ul class="submenu__list">
+        <li @@shares>
+          <a class="submenu__link" href="./shares.html">Акции</a>
+        </li>
+        <li @@online>
+          <a class="submenu__link" href="./online.html">Онлайн</a>
+        </li>
+        <li class="submenu__item--active">
+          <a class="submenu__link" href="./mortgage.html">Ипотека</a>
+        </li>
+        <li @@payment>
+          <a class="submenu__link" href="./one-payment.html">Единовременная оплата</a>
+        </li>
+        <li @@capital>
+          <a class="submenu__link" href="./capital.html">Материнский капитал</a>
+        </li>
+        <li @@installment>
+          <a class="submenu__link" href="./installment.html">Рассрочка от застройщика</a>
+        </li>
+        <li @@military>
+          <a class="submenu__link" href="./military.html">Военная ипотека</a>
+        </li>
+      </ul>
+    </nav>
+    <main class="mortgage wrapper">
+      <div class="mortgage-bg-top"></div>
+      <section class="mortgage__cards mortgage__cards--top">
+        <div class="card card--light">
+          <h1 class="card__title">Ипотека в Крыму от 5%</h1>
+          <p class="card__text">Приобрести недвижимость на берегу моря с "Господдержкой" помогут<br>наши банки-партнёры РНКБ, Банк Россия и Генбанк.</p>
+          <p class="card__text">Мы готовы сопроводить процедуру подачи заявки на кредит и<br>способствовать, чтобы условия выплаты были максимально<br>комфортными для вас!</p>
+        </div>
+        <div class="card card--gold">
+          <p class="card__text">Заполните анкету на нашем сайте и получите<br>скидку до 0,5% по ипотечной ставке.</p>
+          <button class="card__btn btn">Подать заявку онлайн</button>
+        </div>
+      </section>
+      <section class="mortgage__calculator calculator">
+        <h2 class="calculator__title">Ипотечный калькулятор</h2>
+        <div class="calculator__controller controller">
+          <p class="controller__title">Стоимость недвижимости</p>
+          <div class="controller__block">
+            <div id="estate" class="controller__range"></div>
+          </div>
+        </div>
+        <div class="calculator__controller controller">
+          <p class="controller__title">Первый взнос</p>
+          <div class="controller__block">
+            <div id="first" class="controller__range"></div>
+          </div>
+        </div>
+        <div class="calculator__controller controller">
+          <p class="controller__title">Срок кредита (ЛЕТ)</p>
+          <div class="controller__block">
+            <div id="credit" class="controller__range"></div>
+          </div>
+        </div>
+        <div class="calculator__controller controller">
+          <p class="controller__title">Ежемесячный платеж</p>
+          <div class="input-block"><input id="num1" class="controller__input" type="number"><label for="num1">Р</label>
+          </div>
+        </div>
+        <div class="calculator__controller controller">
+          <p class="controller__title">Сумма кредита</p>
+          <div class="input-block"><input id="num2" class="controller__input" type="number"><label for="num2">Р</label>
+          </div>
+        </div>
+      </section>
+      <section class="mortgage__bank-selection bank-selection">
+        <h2 class="bank-selection__title">Выберите банк</h2>
+        <section class="bank-selection__banks">
+          <div class="banks-card">
+            <div class="banks-card__img banks-card__img--rknb"><img src="./img/mortgage/rnkb.png" alt="Банк РКНБ"></div>
+            <p class="attr__title">Cтавка<br><span class="attr__value">5-14%</span>
+            </p>
+            <p class="attr__title">Взнос<br><span class="attr__value">10-15%</span>
+            </p>
+            <p class="attr__title">Cрок кредита<br><span class="attr__value">до 30 лет</span>
+            </p>
+            <p class="attr__title sum">Сумма<br><span class="attr__value">От 600 000 до 15 000 000 Р</span>
+            </p>
+          </div>
+          <div class="banks-card banks-card--active">
+            <div class="banks-card__img banks-card__img--rf"><img src="./img/mortgage/bankrf.png" alt="Банк России"></div>
+            <p class="attr__title">Cтавка<br><span class="attr__value">6-12%</span>
+            </p>
+            <p class="attr__title">Взнос<br><span class="attr__value">15-20%</span>
+            </p>
+            <p class="attr__title">Cрок кредита<br><span class="attr__value">до 30 лет</span>
+            </p>
+            <p class="attr__title sum">Сумма<br><span class="attr__value">От 300 000 до 8 000 000 Р</span>
+            </p>
+          </div>
+          <div class="banks-card">
+            <div class="banks-card__img banks-card__img--gen"><img src="./img/mortgage/genbank.png" alt="Генеральный банк"></div>
+            <p class="attr__title">Cтавка<br><span class="attr__value">7,9-8,5%</span>
+            </p>
+            <p class="attr__title">Взнос<br><span class="attr__value">15-90%</span>
+            </p>
+            <p class="attr__title">Cрок кредита<br><span class="attr__value">до 30 лет</span>
+            </p>
+            <p class="attr__title sum">Сумма<br><span class="attr__value">От 300 000 до 15 000 000 Р</span>
+            </p>
+          </div>
+        </section>
+      </section>
+      <section class="mortgage__consult">
+        <h3 class="consult__title">Получите бесплатную консультацию ипотечного брокера прямо сейчас и узнайте о<br>персональных условиях покупки Вашей квартиры!</h3>
+        <button class="consult__btn btn btn--reverse">Отправить заявку на ипотеку</button>
+      </section>
+      <section class="mortgage__cards mortgage__cards--bottom">
+        <div class="card card--gold">
+          <h1 class="card__title">Пять шагов<br>до покупки квартиры</h1>
+          <p class="card__text">Мы сопровождаем процедуру получения<br>ипотеки, чтобы Вы могли чувствовать<br>уверенность и поддержку настоящих<br>специалистов в процессе покупки своей<br>новой квартиры.</p>
+        </div>
+        <div class="card card--light">
+          <ul class="card__list">
+            <li class="card__item">Обратитесь к персональному менеджеру нашей компании и<br>получите консультацию по вопросам купли квартиры по ипотеке.</li>
+            <li class="card__item">Соберите необходимый комплект документов, чтобы подкрепить его<br>к анкете. Полнота и достоверность сведений способствуют<br>быстрому рассмотрению заявки.</li>
+            <li class="card__item">Квалифицированный брокер индивидуально проверит<br>актуальные предложения по ипотеке, заполнит анкету и направит её в банк для<br>рассмотрения.</li>
+            <li class="card__item">Всего 36 часов до получения приглашения в банк для подписания<br>договора об ипотеке. Вы можете быть уверены в предоставлении<br>самых выгодных условий.</li>
+            <li class="card__item">Наслаждайтесь комфортной жизнью в новой квартире!</li>
+          </ul>
+        </div>
+        <div class="mortgage-bg-bottom"></div>
+      </section>
+    </main>
+    <section class="fixed-buttons">
+      <button class="fixed-buttons__btn callback"></button>
+      <button class="fixed-buttons__btn"></button>
+    </section>
+    
+    <section id="cookie" class="cookie">
+      <div class="cookie__text">
+        <p>
+          Информируем вас о сборе метаданных (cookie, ip-адрес и местоположение) для корректного функционирования сайта.
+        </p>
+        <p>
+          Если вы согласны с нашей 
+          <a href="./politics.html" style="text-decoration: underline; color: #E4BD94;">Политикой конфиденциальности</a>,
+          просто продолжайте пользоваться сайтом.
+        </p>
+      </div>
+      <button class="cookie__btn btn btn--reverse">Соглашаюсь</button>
+    </section>
+    <section id="modal_callback" class="modal">
+      <div class="modal__block">
+        <div class="modal__close"></div>
+        <div id="callback" class="modal__inner">
+          <h2 class="modal__title">Обратный звонок</h2>
+          <form>
+            <label class="modal__input"><input class="modal__input" name="name" type="text">
+              <span>Ваше имя</span>
+            </label>
+            <label class="modal__input"><input class="modal__input tel" type="tel" name="phone" placeholder="+7 (XXX) XXX-XX-XX">
+              <span>Ваш телефон</span>
+            </label>
+            <p class="modal__timing-text">Укажите удобное время для звонка</p>
+            <div class="modal__timing">
+              <label><img src="./img/modals/date.svg" alt="Дата">
+                <input class="date" type="text" placeholder="Дата"></label>
+              <label><img src="./img/modals/time.svg" alt="Время">
+                <input class="time" type="text" placeholder="Время"></label>
+            </div><input class="modal__submit" type="submit" value="Перезвоните мне"><p class="modal__submit-text">Отправляя эту заявку, вы даете согласие на обработку персональных данных</p>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script src="./scripts/extensions/wNumb.min.js"></script>
+    <script src="./scripts/extensions/nouislider.js"></script>
+    <script src="./scripts/extensions/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./scripts/extensions/jquery.maskedinput.min.js"></script>
+    <script src="./scripts/extensions/jquery.maphilight.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/common/mortgageRanges.js"></script>
+    <script src="./scripts/common/banksSelection.js"></script>
+  </body>
+</html>

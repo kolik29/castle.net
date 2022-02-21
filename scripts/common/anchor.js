@@ -1,0 +1,1 @@
+function anchor(){const t=document.querySelector(".anchor");document.addEventListener("scroll",()=>{window.scrollY>200?(t.style.opacity=1,t.style.visibility="visible"):(t.style.opacity=0,t.style.visibility="hidden")}),t.addEventListener("click",t=>{t.preventDefault();const e=$("#anchor").offset().top;$("body,html").animate({scrollTop:e},800)})}

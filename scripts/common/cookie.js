@@ -1,0 +1,1 @@
+const cookie=$("#cookie");sessionStorage.getItem("cookie")||setTimeout(function(){cookie.css("display","flex").hide().fadeIn()},2e3),$(".cookie__btn").on("click",function(e){e.preventDefault(),sessionStorage.setItem("cookie","agree"),cookie.fadeOut()});

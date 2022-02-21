@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Избранное</title><link rel="stylesheet" href="./style/magnific-popup.css"><link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"><link rel="stylesheet" href="./style/aos.css"><link rel="stylesheet" href="./style/favorites.css"></head>
+  <body class="page page--light" onload="switchCheckbox()">
+    <header class="header header--light" data-aos="fade-down">
+      <div class="header__container">
+        <button class="header__burger-btn" area-label="Открыть меню">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="header__logo logo">
+          <a class="logo__link" href="./index.html"><img class="logo__image" src="./img/header/logo/logo-min-gold.svg" alt="Никитский дворец"></a>
+        </div>
+        <nav class="header__menu header__menu--left" data-aos="fade-down" data-aos-delay="200">
+          <ul class="header__list">
+            <li class="header__hovering menu__sub @@about">
+              <a class="header__link" href="./about.html">О комплексе</a>
+              <ul class="menu__submenu">
+                <li>
+                  <a class="header__link" href="./about.html">История создания</a>
+                </li>
+                <li>
+                  <a class="header__link" href="./position.html">Расположение</a>
+                </li>
+                <li>
+                  <a class="header__link" href="./blago.html">Благоустройство</a>
+                </li>
+                <li>
+                  <a class="header__link" href="./infrastructure.html">Инфраструктура</a>
+                </li>
+                <li>
+                  <a class="header__link" href="./build_video.html">Ход строительства</a>
+                </li>
+                <li>
+                  <a class="header__link" href="./document_downl.html">Документация</a>
+                </li>
+              </ul>
+            </li>
+            <li class="header__hovering header__hovering--apartments menu__sub @@apart">
+              <a class="header__link menu__favorites" href="./favorites.html">3</a>
+              <a class="header__link" href="./flats.html">Квартиры и апартаменты</a>
+              <ul class="menu__submenu">
+                <li>
+                  <a class="header__link" href="./flats.html">Выбор квартиры</a>
+                </li>
+                <li>
+                  <a class="header__link" href="./parameters-selection.html">Подбор по параметрам</a>
+                </li>
+                <li>
+                  <a class="header__link" href="./decorations.html">Отделка</a>
+                </li>
+                <li>
+                  <a class="header__link" href="./repair.html">Варианты ремонта</a>
+                </li>
+                <li>
+                  <a class="header__link" href="./404.html">Апартаменты</a>
+                </li>
+                <li>
+                  <a class="header__link" href="./parking.html">Паркинг</a>
+                </li>
+                <li>
+                  <a class="header__link" href="./404.html">Кладовые</a>
+                </li>
+              </ul>
+            </li>
+            <li class="header__hovering @@commerc">
+              <a class="header__link" href="./commercial.html">Коммерческие помещения</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="header__menu header__menu--right" data-aos="fade-down" data-aos-delay="200">
+          <ul class="header__list">
+            <li class="header__hovering menu__sub @@buy">
+              <a class="header__link" href="./shares.html">Как купить</a>
+              <ul class="menu__submenu">
+                <li>
+                  <a class="header__link" href="./shares.html">Акции</a>
+                </li>
+                <li>
+                  <a class="header__link" href="./online.html">Онлайн</a>
+                </li>
+                <li>
+                  <a class="header__link" href="./mortgage.html">Ипотека</a>
+                </li>
+                <li>
+                  <a class="header__link" href="./one-payment.html">Единовременная оплата</a>
+                </li>
+                <li>
+                  <a class="header__link" href="./capital.html">Материнский капитал</a>
+                </li>
+                <li>
+                  <a class="header__link" href="./installment.html">Рассрочка от застройщика</a>
+                </li>
+                <li>
+                  <a class="header__link" href="./military.html">Военная ипотека</a>
+                </li>
+              </ul>
+            </li>
+            <li class="header__hovering">
+              <a class="header__link" href="./404.html">Контакты</a>
+            </li>
+            <li class="header__hovering">
+              <a class="header__link header__menu--phone" href="tel:74952728139">+7 (495) 272-81-39</a>
+            </li>
+            <ul class="header__messanger">
+              <li>
+                <a href="#">
+                  <svg class="header__messanger--whatsapp">
+                    <use xlink:href="./img/header/header-sprite.svg#whatsapp"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="header__messanger--tg">
+                    <use xlink:href="./img/header/header-sprite.svg#telegram"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <ul class="header__social">
+              <li>
+                <a href="#">
+                  <svg class="header__social--facebook">
+                    <use xlink:href="./img/header/header-sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="header__social--instagram">
+                    <use xlink:href="./img/header/header-sprite.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="header__social--vk">
+                    <use xlink:href="./img/header/header-sprite.svg#vk"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </ul>
+        </nav>
+      </div>
+      <section class="header__burger-menu sideout-menu">
+        <button class="sideout-menu__close" area-label="Закрыть меню"></button>
+        <nav class="sideout-menu__block">
+          <ul class="sideout-menu__list">
+            <li class="sideout-menu__item">
+              <a class="sideout-menu__link" href="./about.html">О комплексе</a>
+            </li>
+            <li class="sideout-menu__item">
+              <a class="sideout-menu__link" href="./flats.html">Квартиры и апартаменты</a>
+            </li>
+            <li class="sideout-menu__item">
+              <a class="sideout-menu__link" href="./commercial.html">Коммерческие помещения</a>
+            </li>
+            <li class="sideout-menu__item">
+              <a class="sideout-menu__link" href="./shares.html">Как купить</a>
+            </li>
+            <li class="sideout-menu__item">
+              <a class="sideout-menu__link" href="./politics.html">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="sideout-menu__block sideout-menu__block--middle">
+          <h3 class="sideout-menu__title">Телефон</h3>
+          <ul class="sideout-menu__list">
+            <li class="sideout-menu__item">
+              <a class="sideout-menu__link sideout-menu__link--phone" href="tel:74952728139">+7 (495) 272-81-39</a>
+            </li>
+            <ul class="sideout-menu__messanger">
+              <li class="sideout-menu__item">
+                <a href="#">
+                  <svg class="sideout-menu__messanger--whatsapp">
+                    <use xlink:href="./img/header/header-sprite.svg#whatsapp"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="sideout-menu__item">
+                <a href="#">
+                  <svg class="sideout-menu__messanger--tg">
+                    <use xlink:href="./img/header/header-sprite.svg#telegram"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </ul>
+        </nav>
+        <nav class="sideout-menu__block">
+          <h3 class="sideout-menu__title">Мы в социальных сетях</h3>
+          <ul class="sideout-menu__social">
+            <li class="sideout-menu__item">
+              <a href="#">
+                <svg class="sideout-menu__social--facebook">
+                  <use xlink:href="./img/header/header-sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="sideout-menu__item">
+              <a href="#">
+                <svg class="sideout-menu__social--instagram">
+                  <use xlink:href="./img/header/header-sprite.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="sideout-menu__item">
+              <a href="#">
+                <svg class="sideout-menu__social--vk">
+                  <use xlink:href="./img/header/header-sprite.svg#vk"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+    <main class="favorites wrapper">
+      <table class="table favorites__table">
+        <caption>Избранное</caption>
+        <thead class="table__head">
+          <tr>
+            <th style="vertical-align: middle;">
+              <label><input id="switcher" type="checkbox"><span></span>
+              </label>
+            </th>
+            <th>№</th>
+            <th class="td--center">Кол-во<br>комнат</th>
+            <th class="td--center">Корпус</th>
+            <th class="td--center">Этаж</th>
+            <th>Общая<br>площадь, м<sup>2</sup>
+            </th>
+            <th>Отделка</th>
+            <th class="table-sorting">Общая<br>стоимость</th>
+            <th>Стоимость<br>за 1 м<sup>2</sup>
+            </th>
+            <th class="td--center">Планировка</th>
+            <th class="td--center">На этаже</th><!-- <th>Просмотр</th> --><th></th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody class="table__body">
+          <tr>
+            <td>
+              <label><input id="table-checkbox" type="checkbox"><span></span>
+              </label>
+            </td>
+            <td>143</td>
+            <td class="td--center">3</td>
+            <td class="td--center">4</td>
+            <td class="td--center">4</td>
+            <td>109.03</td>
+            <td>Черновая</td>
+            <td>15 046 140
+              <sup>&#x20bd;</sup>
+            </td>
+            <td>138 000
+              <sup>&#x20bd;</sup>
+            </td>
+            <td>
+              <button class="plan--fav">
+                <svg>
+                  <use xlink:href="./img/table/sprite.svg#layout"></use>
+                </svg>
+              </button>
+            </td>
+            <td>
+              <a href="./flat-single.html">
+                <svg>
+                  <use xlink:href="./img/table/sprite.svg#eye"></use>
+                </svg>
+              </a>
+            </td><!-- <td><button class="td--big">На генплане</button></td> --><td>
+              <button class="td--big tobook">Забронировать</button>
+            </td>
+            <td>
+              <label class="cheackbox-heart"><input checked="checked" type="checkbox"><span class="cheackbox-heart__box"></span>
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label><input id="table-checkbox" type="checkbox"><span></span>
+              </label>
+            </td>
+            <td>155</td>
+            <td class="td--center">3</td>
+            <td class="td--center">4</td>
+            <td class="td--center">7</td>
+            <td>109.03</td>
+            <td>White Box</td>
+            <td>15 809 350
+              <sup>&#x20bd;</sup>
+            </td>
+            <td>145 000
+              <sup>&#x20bd;</sup>
+            </td>
+            <td>
+              <button class="plan--fav">
+                <svg>
+                  <use xlink:href="./img/table/sprite.svg#layout"></use>
+                </svg>
+              </button>
+            </td>
+            <td>
+              <a href="./flat-single.html">
+                <svg>
+                  <use xlink:href="./img/table/sprite.svg#eye"></use>
+                </svg>
+              </a>
+            </td><!-- <td><button class="td--big">На генплане</button></td> --><td>
+              <button class="td--big tobook">Забронировать</button>
+            </td>
+            <td>
+              <label class="cheackbox-heart"><input checked="checked" type="checkbox"><span class="cheackbox-heart__box"></span>
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label><input id="table-checkbox" type="checkbox"><span></span>
+              </label>
+            </td>
+            <td>123</td>
+            <td class="td--center">3</td>
+            <td class="td--center">1</td>
+            <td class="td--center">5</td>
+            <td>128.31</td>
+            <td>Черновая</td>
+            <td>17 706 780
+              <sup>&#x20bd;</sup>
+            </td>
+            <td>138 000
+              <sup>&#x20bd;</sup>
+            </td>
+            <td>
+              <button class="plan--fav">
+                <svg>
+                  <use xlink:href="./img/table/sprite.svg#layout"></use>
+                </svg>
+              </button>
+            </td>
+            <td>
+              <a href="./flat-single.html">
+                <svg>
+                  <use xlink:href="./img/table/sprite.svg#eye"></use>
+                </svg>
+              </a>
+            </td><!-- <td><button class="td--big">На генплане</button></td> --><td>
+              <button class="td--big tobook">Забронировать</button>
+            </td>
+            <td>
+              <label class="cheackbox-heart"><input checked="checked" type="checkbox"><span class="cheackbox-heart__box"></span>
+              </label>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <button class="btn favorites__btn">Сохранить</button>
+    </main>
+    <section class="fixed-buttons">
+      <button class="fixed-buttons__btn callback"></button>
+      <button class="fixed-buttons__btn"></button>
+    </section>
+    
+    <section id="cookie" class="cookie">
+      <div class="cookie__text">
+        <p>
+          Информируем вас о сборе метаданных (cookie, ip-адрес и местоположение) для корректного функционирования сайта.
+        </p>
+        <p>
+          Если вы согласны с нашей 
+          <a href="./politics.html" style="text-decoration: underline; color: #E4BD94;">Политикой конфиденциальности</a>,
+          просто продолжайте пользоваться сайтом.
+        </p>
+      </div>
+      <button class="cookie__btn btn btn--reverse">Соглашаюсь</button>
+    </section>
+    <section id="modal_callback" class="modal">
+      <div class="modal__block">
+        <div class="modal__close"></div>
+        <div id="callback" class="modal__inner">
+          <h2 class="modal__title">Обратный звонок</h2>
+          <form>
+            <label class="modal__input"><input class="modal__input" name="name" type="text">
+              <span>Ваше имя</span>
+            </label>
+            <label class="modal__input"><input class="modal__input tel" type="tel" name="phone" placeholder="+7 (XXX) XXX-XX-XX">
+              <span>Ваш телефон</span>
+            </label>
+            <p class="modal__timing-text">Укажите удобное время для звонка</p>
+            <div class="modal__timing">
+              <label><img src="./img/modals/date.svg" alt="Дата">
+                <input class="date" type="text" placeholder="Дата"></label>
+              <label><img src="./img/modals/time.svg" alt="Время">
+                <input class="time" type="text" placeholder="Время"></label>
+            </div><input class="modal__submit" type="submit" value="Перезвоните мне"><p class="modal__submit-text">Отправляя эту заявку, вы даете согласие на обработку персональных данных</p>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section id="modal_online" class="modal">
+      <div class="modal__block">
+        <div class="modal__close"></div>
+        <div id="online" class="modal__inner">
+          <div class="modal__title">Мы работаем онлайн.<br>Забронируйте квартиру не выходя из дома!</div>
+          <form>
+            <label class="modal__input"><input class="modal__input tel" type="tel" name="phone" placeholder="+7 (XXX) XXX-XX-XX">
+              <span>Ваш телефон</span>
+            </label>
+            <p class="modal__timing-text">Укажите удобное время для звонка</p>
+            <div class="modal__timing">
+              <label><img src="./img/modals/date.svg" alt="Дата">
+                <input class="date" type="text" placeholder="Дата"></label>
+              <label><img src="./img/modals/time.svg" alt="Время">
+                <input class="time" type="text" placeholder="Время"></label>
+            </div><input class="modal__submit" type="submit" value="Перезвоните мне"><p class="modal__submit-text">Отправляя эту заявку, вы даете согласие на обработку персональных данных</p>
+          </form>
+        </div>
+      </div>
+    </section>
+    <div id="modal__plan" class="modal modal--light">
+      <div class="modal__block">
+        <div id="plan" class="modal__inner plan-modal">
+          <div class="plan__img"><img src="./img/modals/plan.jpg" alt="План квартиры"></div>
+          <div class="plan__info">
+            <div class="compass compass--light">
+              <svg>
+                <use xlink:href="./img/flats/sprite.svg#compass"></use>
+              </svg>
+              <span>N</span>
+            </div>
+            <div class="plan__table table-plan">
+              <div class="table-plan__column">
+                <p class="table-plan__attrbute">Корпус</p>
+                <p class="table-plan__attrbute">Этаж</p>
+                <p class="table-plan__attrbute">Количество комнат</p>
+                <p class="table-plan__attrbute">Номер квартиры</p>
+                <p class="table-plan__attrbute">Общая площадь</p>
+              </div>
+              <div class="table-plan__column">
+                <p class="table-plan__value">
+                  <span>4</span>
+                </p>
+                <p class="table-plan__value">
+                  <span>7</span>
+                </p>
+                <p class="table-plan__value">
+                  <span>3</span>
+                </p>
+                <p class="table-plan__value">
+                  <span>143</span>
+                </p>
+                <p class="table-plan__value">
+                  <span>109.03</span>
+                  м<sup>2</sup>
+                </p>
+              </div>
+            </div>
+            <div class="plan__price price-plan">
+              <p class="price-plan__full">
+                <span>15 046 140</span>
+                * &#x20bd;</p>
+              <p class="price-plan__footnote">* При единовременной оплате</p>
+            </div>
+            <div class="plan__price-metr metr-price">
+              <p class="metr-price__value">
+                <span>138 000</span>
+                &#x20bd;</p>
+              <p class="metr-price__name">Стоимость за м<sup>2</sup>
+              </p>
+            </div>
+            <button class="plan__btn tobook">Забронировать</button>
+            <a href="./" download class="plan__download">Скачать план квартиры</a>
+            <a href="#" class="plan__share">Поделиться</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section id="modal__tobook" class="modal">
+      <div class="modal__block">
+        <div class="modal__close"></div>
+        <div id="tobook" class="modal__inner">
+          <div class="modal__title">Забронировать</div>
+          <form>
+            <label class="modal__input"><input class="modal__input" name="name" type="text">
+              <span>Ваше имя</span>
+            </label>
+            <label class="modal__input"><input class="modal__input tel" type="tel" name="phone" placeholder="+7 (XXX) XXX-XX-XX">
+              <span>Ваш телефон</span>
+            </label>
+            <p class="modal__timing-text">Укажите удобное время для звонка</p>
+            <div class="modal__timing">
+              <label class="modal__date"><img src="./img/modals/date.svg" alt="Дата">
+                <input class="date" type="text" placeholder="Дата"></label>
+              <label class="modal__time"><img src="./img/modals/time.svg" alt="Время">
+                <input class="time" type="text" placeholder="Время"></label>
+            </div><input class="modal__submit" type="submit" value="Перезвоните мне"><p class="modal__submit-text">Отправляя эту заявку, вы даете согласие на обработку персональных данных</p>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script src="./scripts/extensions/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./scripts/extensions/jquery.maskedinput.min.js"></script>
+    <script src="./scripts/extensions/jquery.maphilight.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>
