@@ -13,10 +13,58 @@
     cursor: pointer;
 }
 
+.plan-flat-bg {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    transition: .3s;
+    width: 100%;
+    height: 100%;
+}
+
+.plan-flat-bg--show {
+    opacity: 1;
+}
+
+.plan-flat-bg--is-free {
+    background-color: #c5dabc;
+}
+
+.plan-flat-bg--is-sold {
+    background-color: #eebca1;
+}
+
+.plan-flat-bg--is-booked {
+    background-color: #eed1a1;
+}
+
 .plan-flat:hover {
     opacity: 0.3;
 }
 
 #stage-content .content__inner {
     align-items: flex-start;
+}
+
+.sidebar-left__status-box--green:before {
+    content: "";
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #c5dabc;
+}
+
+.plan__sold,
+.plan__booked {
+    top: unset;
+    left: unset;
+    bottom: unset;
+    right: unset;
+}
+
+.content__inner {
+    position: relative;
 }

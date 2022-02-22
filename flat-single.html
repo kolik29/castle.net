@@ -333,6 +333,25 @@
       <section id="stage-content" class="content">
         <!-- <div class="container"> -->
         <div class="content__inner">
+          <div class="plan__msg plan__sold">
+            <p class="plan__msg-text">Извините, данная квартира продана</p>
+            <a
+              class="plan__msg-link btn btn--light btn__gold"
+              href="./parameters-selection.html"
+              >Похожие квартиры</a
+            >
+          </div>
+          <div class="plan__msg plan__booked">
+            <p class="plan__msg-text">
+              Извините, данная квартира забронирована
+            </p>
+            <a
+              class="plan__msg-link btn btn--light btn__gold"
+              href="./parameters-selection.html"
+              >Похожие квартиры</a
+            >
+          </div>
+
           <div class="sidebar-left js-sidebar-left" data-aos="fade-right" data-aos-delay="800" data-floor="1">
             <div class="sidebar-left__housing">
               <p class="sidebar-left__housing-name">Корпус</p>
@@ -361,7 +380,7 @@
               </p>
               <div class="sidebar-left__status-wrapper">
                 <div class="sidebar-left__status-item">
-                  <div class="sidebar-left__status-box"></div>
+                  <div class="sidebar-left__status-box sidebar-left__status-box--green"></div>
                   <div class="sidebar-left__status-name">В продаже</div>
                 </div>
                 <div class="sidebar-left__status-item">
@@ -390,53 +409,36 @@
             </div>
           </div>
           <div class="plan js-plan" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="1000" data-floor="1">
-            <div class="plan__msg plan__sold">
-              <p class="plan__msg-text">Извините, данная квартира продана</p>
-              <a
-                class="plan__msg-link btn btn--light btn__gold"
-                href="./parameters-selection.html"
-                >Похожие квартиры</a
-              >
-            </div>
-            <div class="plan__msg plan__booked">
-              <p class="plan__msg-text">
-                Извините, данная квартира забронирована
-              </p>
-              <a
-                class="plan__msg-link btn btn--light btn__gold"
-                href="./parameters-selection.html"
-                >Похожие квартиры</a
-              >
-            </div>
+            <div class="plan-flat-bg plan-flat-bg--is-sold js-plan-flat-bg" data-plan-flat="1" style="
+              -webkit-mask-image: url(https://kolik29.github.io/castle.net/img/flat-single/floors/1/plan-floor-1-1_bg.svg);
+            "></div>
+            <div class="plan-flat-bg plan-flat-bg--is-sold js-plan-flat-bg" data-plan-flat="2" style="
+              -webkit-mask-image: url(https://kolik29.github.io/castle.net/img/flat-single/floors/1/plan-floor-1-2_bg.svg);
+            "></div>
             <img
               id="plan-img"
               src="https://kolik29.github.io/castle.net/img/flat-single/floors/1/plan-floor-1.svg"
             />
             <div 
-              class="plan-flat"
+              class="plan-flat js-plan-flat"
+              data-plan-flat-target="1"
               style="
                 width: 46.4%;
                 height: 72.5%;
                 left: 0.1%;
                 top: 28%;
-                clip-path: polygon(0 0, 100% 0, 100% 27%, 89% 27%, 89% 78%, 88% 86%, 83% 93%, 76% 97%, 64% 99%, 56% 97%, 47% 92%, 43% 86%, 41% 73%, 0% 73%);
-                background-image: url(https://kolik29.github.io/castle.net/img/flat-single/floors/1/plan-floor-1-1_bg.svg);
-                background-size: 215%;
-                background-position-y: 102%;
+                clip-path: polygon(100% 0, 100% 17%, 100% 25%, 90% 25%, 89% 79%, 88% 85%, 83% 92%, 78% 96%, 65% 99%, 56% 97%, 47% 91%, 43% 85%, 41% 73%, 0% 73%, 0% 0%);
               "
             ></div>
             <div 
-              class="plan-flat"
+              class="plan-flat js-plan-flat"
+              data-plan-flat-target="2"
               style="
                 width: 59.4%;
                 height: 72.5%;
                 left: 40.1%;
                 top: 28%;
-                clip-path: polygon(10% 0, 100% 0, 101% 83%, 92% 99%, 85% 91%, 72% 89%, 0% 85%, 0% 27%, 9% 27%);
-                background-image: url(https://kolik29.github.io/castle.net/img/flat-single/floors/1/plan-floor-1-2_bg.svg);
-                background-size: 169%;
-                background-position-y: 102%;
-                background-position-X: 99%;
+                clip-path: polygon(10% 0, 100% 0, 100% 73%, 92% 85%, 85% 78%, 72% 72%, 0% 72%, 0% 25%, 10% 25%);
               "
             ></div>
             <div class="sidebar-right__loupe loupe-stage">
@@ -469,7 +471,7 @@
               </p>
               <div class="sidebar-left__status-wrapper">
                 <div class="sidebar-left__status-item">
-                  <div class="sidebar-left__status-box"></div>
+                  <div class="sidebar-left__status-box sidebar-left__status-box--green"></div>
                   <div class="sidebar-left__status-name">В продаже</div>
                 </div>
                 <div class="sidebar-left__status-item">
@@ -498,53 +500,36 @@
             </div>
           </div>
           <div class="plan js-plan plan--hide" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="1000" data-floor="2">
-            <div class="plan__msg plan__sold">
-              <p class="plan__msg-text">Извините, данная квартира продана</p>
-              <a
-                class="plan__msg-link btn btn--light btn__gold"
-                href="./parameters-selection.html"
-                >Похожие квартиры</a
-              >
-            </div>
-            <div class="plan__msg plan__booked">
-              <p class="plan__msg-text">
-                Извините, данная квартира забронирована
-              </p>
-              <a
-                class="plan__msg-link btn btn--light btn__gold"
-                href="./parameters-selection.html"
-                >Похожие квартиры</a
-              >
-            </div>
+            <div class="plan-flat-bg plan-flat-bg--is-booked js-plan-flat-bg" data-plan-flat="1" style="
+              -webkit-mask-image: url(https://kolik29.github.io/castle.net/img/flat-single/floors/2/plan-floor-2-1_bg.svg);
+            "></div>
+            <div class="plan-flat-bg plan-flat-bg--is-booked js-plan-flat-bg" data-plan-flat="2" style="
+              -webkit-mask-image: url(https://kolik29.github.io/castle.net/img/flat-single/floors/2/plan-floor-2-2_bg.svg);
+            "></div>
             <img
               id="plan-img"
               src="https://kolik29.github.io/castle.net/img/flat-single/floors/2/plan-floor-2.svg"
             />
             <div 
-              class="plan-flat"
+              class="plan-flat js-plan-flat"
+              data-plan-flat-target="1"
               style="
                 width: 46.4%;
                 height: 96.5%;
                 left: 0.1%;
                 top: 3%;
                 clip-path: polygon(41% 0, 86% 0, 86% 17%, 100% 17%, 100% 47%, 89% 47%, 89% 83%, 88% 91%, 83% 95%, 78% 99%, 65% 100%, 56% 99%, 47% 95%, 43% 90%, 41% 82%, 0% 81%, 0% 26%, 40% 26%);
-                background-image: url(https://kolik29.github.io/castle.net/img/flat-single/floors/2/plan-floor-2-1_bg.svg);
-                background-size: 215%;
-                background-position-y: 89%;
               "
             ></div>
             <div 
-              class="plan-flat"
+              class="plan-flat js-plan-flat"
+              data-plan-flat-target="2"
               style="
                 width: 59.4%;
                 height: 72.5%;
                 left: 41.1%;
                 top: 29%;
                 clip-path: polygon(10% 0, 100% 0, 101% 83%, 92% 99%, 85% 91%, 72% 89%, 0% 85%, 0% 27%, 9% 27%);
-                background-image: url(https://kolik29.github.io/castle.net/img/flat-single/floors/2/plan-floor-2-2_bg.svg);
-                background-size: 172%;
-                background-position-y: 106%;
-                background-position-X: 97%;
               "
             ></div>
             <div class="sidebar-right__loupe loupe-stage">
@@ -577,7 +562,7 @@
               </p>
               <div class="sidebar-left__status-wrapper">
                 <div class="sidebar-left__status-item">
-                  <div class="sidebar-left__status-box"></div>
+                  <div class="sidebar-left__status-box sidebar-left__status-box--green"></div>
                   <div class="sidebar-left__status-name">В продаже</div>
                 </div>
                 <div class="sidebar-left__status-item">
@@ -606,53 +591,36 @@
             </div>
           </div>
           <div class="plan js-plan plan--hide" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="1000" data-floor="3">
-            <div class="plan__msg plan__sold">
-              <p class="plan__msg-text">Извините, данная квартира продана</p>
-              <a
-                class="plan__msg-link btn btn--light btn__gold"
-                href="./parameters-selection.html"
-                >Похожие квартиры</a
-              >
-            </div>
-            <div class="plan__msg plan__booked">
-              <p class="plan__msg-text">
-                Извините, данная квартира забронирована
-              </p>
-              <a
-                class="plan__msg-link btn btn--light btn__gold"
-                href="./parameters-selection.html"
-                >Похожие квартиры</a
-              >
-            </div>
+            <div class="plan-flat-bg plan-flat-bg--is-free js-plan-flat-bg" data-plan-flat="1" style="
+              -webkit-mask-image: url(https://kolik29.github.io/castle.net/img/flat-single/floors/3/plan-floor-3-1_bg.svg);
+            "></div>
+            <div class="plan-flat-bg plan-flat-bg--is-free js-plan-flat-bg" data-plan-flat="2" style="
+              -webkit-mask-image: url(https://kolik29.github.io/castle.net/img/flat-single/floors/3/plan-floor-3-2_bg.svg);
+            "></div>
             <img
               id="plan-img"
               src="https://kolik29.github.io/castle.net/img/flat-single/floors/3/plan-floor-3.svg"
             />
             <div 
-              class="plan-flat"
+              class="plan-flat js-plan-flat"
+              data-plan-flat-target="1"
               style="
                 width: 52.4%;
                 height: 96.5%;
                 left: 0.1%;
                 top: 3%;
                 clip-path: polygon(26% 0, 76% 0, 76% 17%, 100% 17%, 100% 28%, 86% 28%, 85% 47%, 77% 47%, 77% 88%, 74% 93%, 72% 95%, 66% 99%, 56% 100%, 48% 99%, 41% 95%, 37% 91%, 36% 82%, 0% 81%, 0% 26%, 26% 26%);
-                background-image: url(https://kolik29.github.io/castle.net/img/flat-single/floors/3/plan-floor-3-1_bg.svg);
-                background-size: 192%;
-                background-position-y: 82%;
               "
             ></div>
             <div 
-              class="plan-flat"
+              class="plan-flat js-plan-flat"
+              data-plan-flat-target="2"
               style="
                 width: 59.4%;
                 height: 61%;
                 left: 39.1%;
                 top: 30%;
                 clip-path: polygon(10% 0, 100% 0, 101% 83%, 92% 99%, 85% 91%, 72% 89%, 0% 85%, 0% 27%, 9% 27%);
-                background-image: url(https://kolik29.github.io/castle.net/img/flat-single/floors/3/plan-floor-3-2_bg.svg);
-                background-size: 166%;
-                background-position-y: 77%;
-                background-position-X: 100%;
               "
             ></div>
             <div class="sidebar-right__loupe loupe-stage">
@@ -685,7 +653,7 @@
               </p>
               <div class="sidebar-left__status-wrapper">
                 <div class="sidebar-left__status-item">
-                  <div class="sidebar-left__status-box"></div>
+                  <div class="sidebar-left__status-box sidebar-left__status-box--green"></div>
                   <div class="sidebar-left__status-name">В продаже</div>
                 </div>
                 <div class="sidebar-left__status-item">
@@ -714,53 +682,36 @@
             </div>
           </div>
           <div class="plan js-plan plan--hide" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="1000" data-floor="4">
-            <div class="plan__msg plan__sold">
-              <p class="plan__msg-text">Извините, данная квартира продана</p>
-              <a
-                class="plan__msg-link btn btn--light btn__gold"
-                href="./parameters-selection.html"
-                >Похожие квартиры</a
-              >
-            </div>
-            <div class="plan__msg plan__booked">
-              <p class="plan__msg-text">
-                Извините, данная квартира забронирована
-              </p>
-              <a
-                class="plan__msg-link btn btn--light btn__gold"
-                href="./parameters-selection.html"
-                >Похожие квартиры</a
-              >
-            </div>
+            <div class="plan-flat-bg plan-flat-bg--is-sold js-plan-flat-bg" data-plan-flat="1" style="
+              -webkit-mask-image: url(https://kolik29.github.io/castle.net/img/flat-single/floors/4/plan-floor-4-1_bg.svg);
+            "></div>
+            <div class="plan-flat-bg plan-flat-bg--is-free js-plan-flat-bg" data-plan-flat="2" style="
+              -webkit-mask-image: url(https://kolik29.github.io/castle.net/img/flat-single/floors/4/plan-floor-4-2_bg.svg);
+            "></div>
             <img
               id="plan-img"
               src="https://kolik29.github.io/castle.net/img/flat-single/floors/4/plan-floor-4.svg"
             />
             <div 
-              class="plan-flat"
+              class="plan-flat js-plan-flat"
+              data-plan-flat-target="1"
               style="
                 width: 52.4%;
                 height: 96.5%;
                 left: 0.1%;
                 top: 3%;
                 clip-path: polygon(26% 0, 76% 0, 76% 17%, 100% 17%, 100% 28%, 86% 28%, 85% 47%, 77% 47%, 77% 88%, 74% 93%, 72% 95%, 66% 99%, 56% 100%, 48% 99%, 41% 95%, 37% 91%, 36% 82%, 0% 81%, 0% 26%, 26% 26%);
-                background-image: url(https://kolik29.github.io/castle.net/img/flat-single/floors/4/plan-floor-4-1_bg.svg);
-                background-size: 192%;
-                background-position-y: 82%;
               "
             ></div>
             <div 
-              class="plan-flat"
+              class="plan-flat js-plan-flat"
+              data-plan-flat-target="2"
               style="
                 width: 59.4%;
                 height: 79%;
                 left: 39.1%;
                 top: 2%;
                 clip-path: polygon(66% 0, 100% 0, 100% 100%, 0% 100%, 0 58%, 9% 58%, 9% 33%, 66% 33%);
-                background-image: url(https://kolik29.github.io/castle.net/img/flat-single/floors/4/plan-floor-4-2_bg.svg);
-                background-size: 167%;
-                background-position-y: 7%;
-                background-position-X: 97%;
               "
             ></div>
             <div class="sidebar-right__loupe loupe-stage">
@@ -793,7 +744,7 @@
               </p>
               <div class="sidebar-left__status-wrapper">
                 <div class="sidebar-left__status-item">
-                  <div class="sidebar-left__status-box"></div>
+                  <div class="sidebar-left__status-box sidebar-left__status-box--green"></div>
                   <div class="sidebar-left__status-name">В продаже</div>
                 </div>
                 <div class="sidebar-left__status-item">
@@ -822,53 +773,36 @@
             </div>
           </div>
           <div class="plan js-plan plan--hide" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="1000" data-floor="5">
-            <div class="plan__msg plan__sold">
-              <p class="plan__msg-text">Извините, данная квартира продана</p>
-              <a
-                class="plan__msg-link btn btn--light btn__gold"
-                href="./parameters-selection.html"
-                >Похожие квартиры</a
-              >
-            </div>
-            <div class="plan__msg plan__booked">
-              <p class="plan__msg-text">
-                Извините, данная квартира забронирована
-              </p>
-              <a
-                class="plan__msg-link btn btn--light btn__gold"
-                href="./parameters-selection.html"
-                >Похожие квартиры</a
-              >
-            </div>
+            <div class="plan-flat-bg plan-flat-bg--is-sold js-plan-flat-bg" data-plan-flat="1" style="
+              -webkit-mask-image: url(https://kolik29.github.io/castle.net/img/flat-single/floors/4/plan-floor-4-1_bg.svg);
+            "></div>
+            <div class="plan-flat-bg plan-flat-bg--is-free js-plan-flat-bg" data-plan-flat="2" style="
+              -webkit-mask-image: url(https://kolik29.github.io/castle.net/img/flat-single/floors/4/plan-floor-4-2_bg.svg);
+            "></div>
             <img
               id="plan-img"
               src="https://kolik29.github.io/castle.net/img/flat-single/floors/4/plan-floor-4.svg"
             />
             <div 
-              class="plan-flat"
+              class="plan-flat js-plan-flat"
+              data-plan-flat-target="1"
               style="
                 width: 52.4%;
                 height: 96.5%;
                 left: 0.1%;
                 top: 3%;
                 clip-path: polygon(26% 0, 76% 0, 76% 17%, 100% 17%, 100% 28%, 86% 28%, 85% 47%, 77% 47%, 77% 88%, 74% 93%, 72% 95%, 66% 99%, 56% 100%, 48% 99%, 41% 95%, 37% 91%, 36% 82%, 0% 81%, 0% 26%, 26% 26%);
-                background-image: url(https://kolik29.github.io/castle.net/img/flat-single/floors/4/plan-floor-4-1_bg.svg);
-                background-size: 192%;
-                background-position-y: 82%;
               "
             ></div>
             <div 
-              class="plan-flat"
+              class="plan-flat js-plan-flat"
+              data-plan-flat-target="2"
               style="
                 width: 59.4%;
                 height: 79%;
                 left: 39.1%;
                 top: 2%;
                 clip-path: polygon(66% 0, 100% 0, 100% 100%, 0% 100%, 0 58%, 9% 58%, 9% 33%, 66% 33%);
-                background-image: url(https://kolik29.github.io/castle.net/img/flat-single/floors/4/plan-floor-4-2_bg.svg);
-                background-size: 167%;
-                background-position-y: 7%;
-                background-position-X: 97%;
               "
             ></div>
             <div class="sidebar-right__loupe loupe-stage">
@@ -901,7 +835,7 @@
               </p>
               <div class="sidebar-left__status-wrapper">
                 <div class="sidebar-left__status-item">
-                  <div class="sidebar-left__status-box"></div>
+                  <div class="sidebar-left__status-box sidebar-left__status-box--green"></div>
                   <div class="sidebar-left__status-name">В продаже</div>
                 </div>
                 <div class="sidebar-left__status-item">
@@ -930,53 +864,36 @@
             </div>
           </div>
           <div class="plan js-plan plan--hide" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="1000" data-floor="6">
-            <div class="plan__msg plan__sold">
-              <p class="plan__msg-text">Извините, данная квартира продана</p>
-              <a
-                class="plan__msg-link btn btn--light btn__gold"
-                href="./parameters-selection.html"
-                >Похожие квартиры</a
-              >
-            </div>
-            <div class="plan__msg plan__booked">
-              <p class="plan__msg-text">
-                Извините, данная квартира забронирована
-              </p>
-              <a
-                class="plan__msg-link btn btn--light btn__gold"
-                href="./parameters-selection.html"
-                >Похожие квартиры</a
-              >
-            </div>
+            <div class="plan-flat-bg plan-flat-bg--is-sold js-plan-flat-bg" data-plan-flat="1" style="
+              -webkit-mask-image: url(https://kolik29.github.io/castle.net/img/flat-single/floors/4/plan-floor-4-1_bg.svg);
+            "></div>
+            <div class="plan-flat-bg plan-flat-bg--is-free js-plan-flat-bg" data-plan-flat="2" style="
+              -webkit-mask-image: url(https://kolik29.github.io/castle.net/img/flat-single/floors/4/plan-floor-4-2_bg.svg);
+            "></div>
             <img
               id="plan-img"
               src="https://kolik29.github.io/castle.net/img/flat-single/floors/4/plan-floor-4.svg"
             />
             <div 
-              class="plan-flat"
+              class="plan-flat js-plan-flat"
+              data-plan-flat-target="1"
               style="
                 width: 52.4%;
                 height: 96.5%;
                 left: 0.1%;
                 top: 3%;
                 clip-path: polygon(26% 0, 76% 0, 76% 17%, 100% 17%, 100% 28%, 86% 28%, 85% 47%, 77% 47%, 77% 88%, 74% 93%, 72% 95%, 66% 99%, 56% 100%, 48% 99%, 41% 95%, 37% 91%, 36% 82%, 0% 81%, 0% 26%, 26% 26%);
-                background-image: url(https://kolik29.github.io/castle.net/img/flat-single/floors/4/plan-floor-4-1_bg.svg);
-                background-size: 192%;
-                background-position-y: 82%;
               "
             ></div>
             <div 
-              class="plan-flat"
+              class="plan-flat js-plan-flat"
+              data-plan-flat-target="2"
               style="
                 width: 59.4%;
                 height: 79%;
                 left: 39.1%;
                 top: 2%;
                 clip-path: polygon(66% 0, 100% 0, 100% 100%, 0% 100%, 0 58%, 9% 58%, 9% 33%, 66% 33%);
-                background-image: url(https://kolik29.github.io/castle.net/img/flat-single/floors/4/plan-floor-4-2_bg.svg);
-                background-size: 167%;
-                background-position-y: 7%;
-                background-position-X: 97%;
               "
             ></div>
             <div class="sidebar-right__loupe loupe-stage">
@@ -1009,7 +926,7 @@
               </p>
               <div class="sidebar-left__status-wrapper">
                 <div class="sidebar-left__status-item">
-                  <div class="sidebar-left__status-box"></div>
+                  <div class="sidebar-left__status-box sidebar-left__status-box--green"></div>
                   <div class="sidebar-left__status-name">В продаже</div>
                 </div>
                 <div class="sidebar-left__status-item">
@@ -1038,53 +955,36 @@
             </div>
           </div>
           <div class="plan js-plan plan--hide" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="1000" data-floor="7">
-            <div class="plan__msg plan__sold">
-              <p class="plan__msg-text">Извините, данная квартира продана</p>
-              <a
-                class="plan__msg-link btn btn--light btn__gold"
-                href="./parameters-selection.html"
-                >Похожие квартиры</a
-              >
-            </div>
-            <div class="plan__msg plan__booked">
-              <p class="plan__msg-text">
-                Извините, данная квартира забронирована
-              </p>
-              <a
-                class="plan__msg-link btn btn--light btn__gold"
-                href="./parameters-selection.html"
-                >Похожие квартиры</a
-              >
-            </div>
+            <div class="plan-flat-bg plan-flat-bg--is-sold js-plan-flat-bg" data-plan-flat="1" style="
+              -webkit-mask-image: url(https://kolik29.github.io/castle.net/img/flat-single/floors/4/plan-floor-4-1_bg.svg);
+            "></div>
+            <div class="plan-flat-bg plan-flat-bg--is-free js-plan-flat-bg" data-plan-flat="2" style="
+              -webkit-mask-image: url(https://kolik29.github.io/castle.net/img/flat-single/floors/4/plan-floor-4-2_bg.svg);
+            "></div>
             <img
               id="plan-img"
               src="https://kolik29.github.io/castle.net/img/flat-single/floors/4/plan-floor-4.svg"
             />
             <div 
-              class="plan-flat"
+              class="plan-flat js-plan-flat"
+              data-plan-flat-target="1"
               style="
                 width: 52.4%;
                 height: 96.5%;
                 left: 0.1%;
                 top: 3%;
                 clip-path: polygon(26% 0, 76% 0, 76% 17%, 100% 17%, 100% 28%, 86% 28%, 85% 47%, 77% 47%, 77% 88%, 74% 93%, 72% 95%, 66% 99%, 56% 100%, 48% 99%, 41% 95%, 37% 91%, 36% 82%, 0% 81%, 0% 26%, 26% 26%);
-                background-image: url(https://kolik29.github.io/castle.net/img/flat-single/floors/4/plan-floor-4-1_bg.svg);
-                background-size: 192%;
-                background-position-y: 82%;
               "
             ></div>
             <div 
-              class="plan-flat"
+              class="plan-flat js-plan-flat"
+              data-plan-flat-target="2"
               style="
                 width: 59.4%;
                 height: 79%;
                 left: 39.1%;
                 top: 2%;
                 clip-path: polygon(66% 0, 100% 0, 100% 100%, 0% 100%, 0 58%, 9% 58%, 9% 33%, 66% 33%);
-                background-image: url(https://kolik29.github.io/castle.net/img/flat-single/floors/4/plan-floor-4-2_bg.svg);
-                background-size: 167%;
-                background-position-y: 7%;
-                background-position-X: 97%;
               "
             ></div>
             <div class="sidebar-right__loupe loupe-stage">
@@ -1117,7 +1017,7 @@
               </p>
               <div class="sidebar-left__status-wrapper">
                 <div class="sidebar-left__status-item">
-                  <div class="sidebar-left__status-box"></div>
+                  <div class="sidebar-left__status-box sidebar-left__status-box--green"></div>
                   <div class="sidebar-left__status-name">В продаже</div>
                 </div>
                 <div class="sidebar-left__status-item">
@@ -1146,53 +1046,36 @@
             </div>
           </div>
           <div class="plan js-plan plan--hide" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="1000" data-floor="8">
-            <div class="plan__msg plan__sold">
-              <p class="plan__msg-text">Извините, данная квартира продана</p>
-              <a
-                class="plan__msg-link btn btn--light btn__gold"
-                href="./parameters-selection.html"
-                >Похожие квартиры</a
-              >
-            </div>
-            <div class="plan__msg plan__booked">
-              <p class="plan__msg-text">
-                Извините, данная квартира забронирована
-              </p>
-              <a
-                class="plan__msg-link btn btn--light btn__gold"
-                href="./parameters-selection.html"
-                >Похожие квартиры</a
-              >
-            </div>
+            <div class="plan-flat-bg plan-flat-bg--is-sold js-plan-flat-bg" data-plan-flat="1" style="
+              -webkit-mask-image: url(https://kolik29.github.io/castle.net/img/flat-single/floors/4/plan-floor-4-1_bg.svg);
+            "></div>
+            <div class="plan-flat-bg plan-flat-bg--is-free js-plan-flat-bg" data-plan-flat="2" style="
+              -webkit-mask-image: url(https://kolik29.github.io/castle.net/img/flat-single/floors/4/plan-floor-4-2_bg.svg);
+            "></div>
             <img
               id="plan-img"
               src="https://kolik29.github.io/castle.net/img/flat-single/floors/4/plan-floor-4.svg"
             />
             <div 
-              class="plan-flat"
+              class="plan-flat js-plan-flat"
+              data-plan-flat-target="1"
               style="
                 width: 52.4%;
                 height: 96.5%;
                 left: 0.1%;
                 top: 3%;
                 clip-path: polygon(26% 0, 76% 0, 76% 17%, 100% 17%, 100% 28%, 86% 28%, 85% 47%, 77% 47%, 77% 88%, 74% 93%, 72% 95%, 66% 99%, 56% 100%, 48% 99%, 41% 95%, 37% 91%, 36% 82%, 0% 81%, 0% 26%, 26% 26%);
-                background-image: url(https://kolik29.github.io/castle.net/img/flat-single/floors/4/plan-floor-4-1_bg.svg);
-                background-size: 192%;
-                background-position-y: 82%;
               "
             ></div>
             <div 
-              class="plan-flat"
+              class="plan-flat js-plan-flat"
+              data-plan-flat-target="2"
               style="
                 width: 59.4%;
                 height: 79%;
                 left: 39.1%;
                 top: 2%;
                 clip-path: polygon(66% 0, 100% 0, 100% 100%, 0% 100%, 0 58%, 9% 58%, 9% 33%, 66% 33%);
-                background-image: url(https://kolik29.github.io/castle.net/img/flat-single/floors/4/plan-floor-4-2_bg.svg);
-                background-size: 167%;
-                background-position-y: 7%;
-                background-position-X: 97%;
               "
             ></div>
             <div class="sidebar-right__loupe loupe-stage">
@@ -1225,7 +1108,7 @@
               </p>
               <div class="sidebar-left__status-wrapper">
                 <div class="sidebar-left__status-item">
-                  <div class="sidebar-left__status-box"></div>
+                  <div class="sidebar-left__status-box sidebar-left__status-box--green"></div>
                   <div class="sidebar-left__status-name">В продаже</div>
                 </div>
                 <div class="sidebar-left__status-item">
@@ -1254,53 +1137,36 @@
             </div>
           </div>
           <div class="plan js-plan plan--hide" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="1000" data-floor="9">
-            <div class="plan__msg plan__sold">
-              <p class="plan__msg-text">Извините, данная квартира продана</p>
-              <a
-                class="plan__msg-link btn btn--light btn__gold"
-                href="./parameters-selection.html"
-                >Похожие квартиры</a
-              >
-            </div>
-            <div class="plan__msg plan__booked">
-              <p class="plan__msg-text">
-                Извините, данная квартира забронирована
-              </p>
-              <a
-                class="plan__msg-link btn btn--light btn__gold"
-                href="./parameters-selection.html"
-                >Похожие квартиры</a
-              >
-            </div>
+            <div class="plan-flat-bg plan-flat-bg--is-sold js-plan-flat-bg" data-plan-flat="1" style="
+              -webkit-mask-image: url(https://kolik29.github.io/castle.net/img/flat-single/floors/4/plan-floor-4-1_bg.svg);
+            "></div>
+            <div class="plan-flat-bg plan-flat-bg--is-free js-plan-flat-bg" data-plan-flat="2" style="
+              -webkit-mask-image: url(https://kolik29.github.io/castle.net/img/flat-single/floors/4/plan-floor-4-2_bg.svg);
+            "></div>
             <img
               id="plan-img"
               src="https://kolik29.github.io/castle.net/img/flat-single/floors/4/plan-floor-4.svg"
             />
             <div 
-              class="plan-flat"
+              class="plan-flat js-plan-flat"
+              data-plan-flat-target="1"
               style="
                 width: 52.4%;
                 height: 96.5%;
                 left: 0.1%;
                 top: 3%;
                 clip-path: polygon(26% 0, 76% 0, 76% 17%, 100% 17%, 100% 28%, 86% 28%, 85% 47%, 77% 47%, 77% 88%, 74% 93%, 72% 95%, 66% 99%, 56% 100%, 48% 99%, 41% 95%, 37% 91%, 36% 82%, 0% 81%, 0% 26%, 26% 26%);
-                background-image: url(https://kolik29.github.io/castle.net/img/flat-single/floors/4/plan-floor-4-1_bg.svg);
-                background-size: 192%;
-                background-position-y: 82%;
               "
             ></div>
             <div 
-              class="plan-flat"
+              class="plan-flat js-plan-flat"
+              data-plan-flat-target="2"
               style="
                 width: 59.4%;
                 height: 79%;
                 left: 39.1%;
                 top: 2%;
                 clip-path: polygon(66% 0, 100% 0, 100% 100%, 0% 100%, 0 58%, 9% 58%, 9% 33%, 66% 33%);
-                background-image: url(https://kolik29.github.io/castle.net/img/flat-single/floors/4/plan-floor-4-2_bg.svg);
-                background-size: 167%;
-                background-position-y: 7%;
-                background-position-X: 97%;
               "
             ></div>
             <div class="sidebar-right__loupe loupe-stage">
@@ -1333,7 +1199,7 @@
               </p>
               <div class="sidebar-left__status-wrapper">
                 <div class="sidebar-left__status-item">
-                  <div class="sidebar-left__status-box"></div>
+                  <div class="sidebar-left__status-box sidebar-left__status-box--green"></div>
                   <div class="sidebar-left__status-name">В продаже</div>
                 </div>
                 <div class="sidebar-left__status-item">
@@ -1362,53 +1228,36 @@
             </div>
           </div>
           <div class="plan js-plan plan--hide" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="1000" data-floor="10">
-            <div class="plan__msg plan__sold">
-              <p class="plan__msg-text">Извините, данная квартира продана</p>
-              <a
-                class="plan__msg-link btn btn--light btn__gold"
-                href="./parameters-selection.html"
-                >Похожие квартиры</a
-              >
-            </div>
-            <div class="plan__msg plan__booked">
-              <p class="plan__msg-text">
-                Извините, данная квартира забронирована
-              </p>
-              <a
-                class="plan__msg-link btn btn--light btn__gold"
-                href="./parameters-selection.html"
-                >Похожие квартиры</a
-              >
-            </div>
+            <div class="plan-flat-bg plan-flat-bg--is-sold js-plan-flat-bg" data-plan-flat="1" style="
+              -webkit-mask-image: url(https://kolik29.github.io/castle.net/img/flat-single/floors/4/plan-floor-4-1_bg.svg);
+            "></div>
+            <div class="plan-flat-bg plan-flat-bg--is-free js-plan-flat-bg" data-plan-flat="2" style="
+              -webkit-mask-image: url(https://kolik29.github.io/castle.net/img/flat-single/floors/4/plan-floor-4-2_bg.svg);
+            "></div>
             <img
               id="plan-img"
               src="https://kolik29.github.io/castle.net/img/flat-single/floors/4/plan-floor-4.svg"
             />
             <div 
-              class="plan-flat"
+              class="plan-flat js-plan-flat"
+              data-plan-flat-target="1"
               style="
                 width: 52.4%;
                 height: 96.5%;
                 left: 0.1%;
                 top: 3%;
                 clip-path: polygon(26% 0, 76% 0, 76% 17%, 100% 17%, 100% 28%, 86% 28%, 85% 47%, 77% 47%, 77% 88%, 74% 93%, 72% 95%, 66% 99%, 56% 100%, 48% 99%, 41% 95%, 37% 91%, 36% 82%, 0% 81%, 0% 26%, 26% 26%);
-                background-image: url(https://kolik29.github.io/castle.net/img/flat-single/floors/4/plan-floor-4-1_bg.svg);
-                background-size: 192%;
-                background-position-y: 82%;
               "
             ></div>
             <div 
-              class="plan-flat"
+              class="plan-flat js-plan-flat"
+              data-plan-flat-target="2"
               style="
                 width: 59.4%;
                 height: 79%;
                 left: 39.1%;
                 top: 2%;
                 clip-path: polygon(66% 0, 100% 0, 100% 100%, 0% 100%, 0 58%, 9% 58%, 9% 33%, 66% 33%);
-                background-image: url(https://kolik29.github.io/castle.net/img/flat-single/floors/4/plan-floor-4-2_bg.svg);
-                background-size: 167%;
-                background-position-y: 7%;
-                background-position-X: 97%;
               "
             ></div>
             <div class="sidebar-right__loupe loupe-stage">
@@ -1441,7 +1290,7 @@
               </p>
               <div class="sidebar-left__status-wrapper">
                 <div class="sidebar-left__status-item">
-                  <div class="sidebar-left__status-box"></div>
+                  <div class="sidebar-left__status-box sidebar-left__status-box--green"></div>
                   <div class="sidebar-left__status-name">В продаже</div>
                 </div>
                 <div class="sidebar-left__status-item">
@@ -1470,53 +1319,36 @@
             </div>
           </div>
           <div class="plan js-plan plan--hide" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="1000" data-floor="11">
-            <div class="plan__msg plan__sold">
-              <p class="plan__msg-text">Извините, данная квартира продана</p>
-              <a
-                class="plan__msg-link btn btn--light btn__gold"
-                href="./parameters-selection.html"
-                >Похожие квартиры</a
-              >
-            </div>
-            <div class="plan__msg plan__booked">
-              <p class="plan__msg-text">
-                Извините, данная квартира забронирована
-              </p>
-              <a
-                class="plan__msg-link btn btn--light btn__gold"
-                href="./parameters-selection.html"
-                >Похожие квартиры</a
-              >
-            </div>
+            <div class="plan-flat-bg plan-flat-bg--is-sold js-plan-flat-bg" data-plan-flat="1" style="
+              -webkit-mask-image: url(https://kolik29.github.io/castle.net/img/flat-single/floors/4/plan-floor-4-1_bg.svg);
+            "></div>
+            <div class="plan-flat-bg plan-flat-bg--is-free js-plan-flat-bg" data-plan-flat="2" style="
+              -webkit-mask-image: url(https://kolik29.github.io/castle.net/img/flat-single/floors/4/plan-floor-4-2_bg.svg);
+            "></div>
             <img
               id="plan-img"
               src="https://kolik29.github.io/castle.net/img/flat-single/floors/4/plan-floor-4.svg"
             />
             <div 
-              class="plan-flat"
+              class="plan-flat js-plan-flat"
+              data-plan-flat-target="1"
               style="
                 width: 52.4%;
                 height: 96.5%;
                 left: 0.1%;
                 top: 3%;
                 clip-path: polygon(26% 0, 76% 0, 76% 17%, 100% 17%, 100% 28%, 86% 28%, 85% 47%, 77% 47%, 77% 88%, 74% 93%, 72% 95%, 66% 99%, 56% 100%, 48% 99%, 41% 95%, 37% 91%, 36% 82%, 0% 81%, 0% 26%, 26% 26%);
-                background-image: url(https://kolik29.github.io/castle.net/img/flat-single/floors/4/plan-floor-4-1_bg.svg);
-                background-size: 192%;
-                background-position-y: 82%;
               "
             ></div>
             <div 
-              class="plan-flat"
+              class="plan-flat js-plan-flat"
+              data-plan-flat-target="2"
               style="
                 width: 59.4%;
                 height: 79%;
                 left: 39.1%;
                 top: 2%;
                 clip-path: polygon(66% 0, 100% 0, 100% 100%, 0% 100%, 0 58%, 9% 58%, 9% 33%, 66% 33%);
-                background-image: url(https://kolik29.github.io/castle.net/img/flat-single/floors/4/plan-floor-4-2_bg.svg);
-                background-size: 167%;
-                background-position-y: 7%;
-                background-position-X: 97%;
               "
             ></div>
             <div class="sidebar-right__loupe loupe-stage">
