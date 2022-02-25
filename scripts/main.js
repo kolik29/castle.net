@@ -60,7 +60,7 @@ $(document).ready(function () {
         $("#modal_callback").css("display", "flex").hide().fadeIn(),
         $("#callback").fadeIn();
     }),
-    $(".tobook").on("click", function (e) {
+    $("body").on("click", '.tobook', function (e) {
       e.preventDefault(),
         $("#modal__tobook").css("display", "flex").hide().fadeIn(),
         $("#tobook").fadeIn();
