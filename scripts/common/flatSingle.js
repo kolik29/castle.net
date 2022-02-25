@@ -650,7 +650,7 @@ function right_side_template(floor, white_box = false) {
     <li class="sidebar-right__item js-select-floor` + (floor == 1 ? ' sidebar-right__item--active' : '') + `" data-floor-target="${floor}">
         <p class="sidebar-right__name">${floor} Этаж</p>`
         + (white_box ? '<p class="sidebar-right__descr">с отделкой White box</p>' : '') +
-        `<a class="sidebar-right__link" href="/documents/flat-single/floors/${floor}/4К для продажи.pdf" download>
+        `<a class="sidebar-right__link" href="https://kolik29.github.io/castle.net/documents/flat-single/floors/${floor}/4К для продажи.pdf" download>
             <span class="sidebar-right__link-icon"
             ><img src="./img/common/pdf.svg" alt="" />
             </span>
@@ -674,7 +674,7 @@ function plan_template(floor, flat) {
         "></div>
         <img
             id="plan-img"
-            src="/img/flat-single/floors/${floor}/plan-floor.svg"
+            src="https://kolik29.github.io/castle.net/img/flat-single/floors/${floor}/plan-floor.svg"
         />
         <div 
             class="plan-flat js-plan-flat` + (flat[0].status == 'free' ? ' js-plan-flat--free' : '') + `"
@@ -842,12 +842,12 @@ function flat_template(floor, flat, flat_id) {
                 <img
                     data-type-img="flat"
                     class="js-plan-flat__img"
-                    src="/img/flat-single/floors/${floor}/plan-flat-${flat_id}_1.svg"
+                    src="https://kolik29.github.io/castle.net/img/flat-single/floors/${floor}/plan-flat-${flat_id}_1.svg"
                 />
                 <img
                     data-type-img="size"
                     class="js-plan-flat__img"
-                    src="/img/flat-single/floors/${floor}/plan-flat-${flat_id}_2.svg"
+                    src="https://kolik29.github.io/castle.net/img/flat-single/floors/${floor}/plan-flat-${flat_id}_2.svg"
                 />
                 <div class="sidebar-right__loupe">
                     <div class="sidebar-right__loupe-circle">
@@ -884,7 +884,7 @@ function flat_template(floor, flat, flat_id) {
                 </div>
                 <button class="flat__btn tobook">Забронировать</button>
                 <a class="flat__btn btn flat__btn--light btn--gold" href="#">Подобрать похожие</a>
-                <a class="flat__link" href="/documents/flat-single/floors/4/4К для продажи-1.pdf">
+                <a class="flat__link" href="https://kolik29.github.io/castle.net/documents/flat-single/floors/4/4К для продажи-1.pdf">
                     <span class="flat__link-icon"><img src="./img/common/pdf.svg" alt="" /></span>
                     <span class="flat__link-text">Скачать план квартиры</span>
                 </a>
