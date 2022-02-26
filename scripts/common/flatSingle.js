@@ -1,5 +1,71 @@
-function flatMap(){var a=$(window).outerWidth(),e=$(".map-desktop"),t=$(".map-1366");a<1370?(e.removeAttr("name"),t.attr("name","image-map")):a>1366&&(t.removeAttr("name"),e.attr("name","image-map"))}$(".plan__flat-1").mouseenter(function(){$(".plan__map").css("opacity",0),$(".plan__red").css("opacity",1),$(".plan__flat-2").mouseenter(function(){$(".plan__map").css("opacity",0),$(".plan__orange").css("opacity",1),$(".plan__msg").css({opacity:0,"z-index":-1}),$(".plan__booked").css({opacity:1,"z-index":3})}),$(".plan__red, .plan__orange").css("opacity",0)}),$(".plan__flat-3").mouseenter(function(){$(".plan__map").css("opacity",0),$(".plan__msg").css({opacity:0,"z-index":-1}),$(".plan__free, .sidebar-left__info").css("opacity",1)}).mouseleave(function(){$(".plan__free, .sidebar-left__info").css("opacity",0)}).on("click",function(a){a.preventDefault(),$(".content").hide(),$(".flat__tabs-item").not(this).removeClass("flat__tabs-item--active"),$("#flat").toggleClass("flat__tabs-item--active"),$("#flat-content").fadeIn(),$(".background__stage").hide(),$(".background__flat").fadeIn(1e3),$(".sidebar-right__loupe").removeClass("loupe-stage"),$(".sidebar-right__loupe").removeClass("loupe-sizes"),$(".sidebar-right__loupe").addClass("loupe-furniture"),$(".flat__tagline").addClass("flat__tagline--active")}),$(".sidebar-left__cat-item").on("click",function(){$(".sidebar-left__cat-item").not(this).removeClass("sidebar-left__cat-item--active"),$(this).toggleClass("sidebar-left__cat-item--active"),$(this).hasClass("cat-flats-2")?($(".plan__map").css("opacity",0),$(".plan__flats-2").css("opacity",1)):$(this).hasClass("cat-flats-3")?($(".plan__map").css("opacity",0),$(".plan__free").css("opacity",1)):($(".plan__map").css("opacity",0),$(".plan__clean").css("opacity",1))}),$(".flat__tabs-item").on("click",function(){$(".flat__tabs-item").not(this).removeClass("flat__tabs-item--active"),$(this).toggleClass("flat__tabs-item--active")}),$("#flat").on("click",function(){$("#size-img").hide(),$("#flat-img").show(),$(".background__stage").hide(),$(".background__flat").fadeIn(),$(".sidebar-right__loupe").removeClass("loupe-stage"),$(".sidebar-right__loupe").removeClass("loupe-sizes"),$(".sidebar-right__loupe").addClass("loupe-furniture")}),$("#stage").on("click",function(){$(".content").hide(),$("#size-img").hide(),$("#flat-img").show(),$("#stage-content").fadeIn(),$(".background__flat").hide(),$(".background__stage").fadeIn(),$(".sidebar-right__loupe").removeClass("loupe-furniture"),$(".sidebar-right__loupe").removeClass("loupe-sizes"),$(".sidebar-right__loupe").addClass("loupe-stage")}),$("#size").on("click",function(){$("#flat-img").hide(),$("#size-img").show(),$(".background__stage").hide(),$(".background__flat").fadeIn(),$(".sidebar-right__loupe").removeClass("loupe-stage"),$(".sidebar-right__loupe").removeClass("loupe-furniture"),$(".sidebar-right__loupe").addClass("loupe-sizes")}),$(".flat-coords area").mouseenter(function(){$(".flat__elements-item").eq($(".flat-coords area").index(this)).css("background-color","hsla(31,36%,62%,.29)")}).mouseleave(function(){$(".flat__elements-item").eq($(".flat-coords area").index(this)).css("background-color","transparent")}),flatMap(),$(window).resize(function(){flatMap()});
+function flatMap() {
+    var a = $(window).outerWidth(),
+        e = $(".map-desktop"),
+        t = $(".map-1366");
 
+    a < 1370 ? (e.removeAttr("name"), t.attr("name", "image-map")) : a > 1366 && (t.removeAttr("name"), e.attr("name", "image-map"))
+}
+
+$(".plan__flat-1").mouseenter(function() {
+    $(".plan__map").css("opacity", 0), $(".plan__red").css("opacity", 1), $(".plan__flat-2").mouseenter(function() {
+        $(".plan__map").css("opacity", 0), $(".plan__orange").css("opacity", 1), $(".plan__msg").css({
+            opacity: 0,
+            "z-index": -1
+        })
+        
+        $(".plan__booked").css({
+            opacity: 1,
+            "z-index": 3
+        })
+    })
+    
+    $(".plan__red, .plan__orange").css("opacity", 0)
+})
+
+$(".plan__flat-3").mouseenter(function() {
+    $(".plan__map").css("opacity", 0), $(".plan__msg").css({
+        opacity: 0,
+        "z-index": -1
+    })
+    
+    $(".plan__free, .sidebar-left__info").css("opacity", 1)
+}).mouseleave(function() {
+    $(".plan__free, .sidebar-left__info").css("opacity", 0)
+}).on("click", function(a) {
+    a.preventDefault(), $(".content").hide(), $(".flat__tabs-item").not(this).removeClass("flat__tabs-item--active"), $("#flat").toggleClass("flat__tabs-item--active"), $("#flat-content").fadeIn(), $(".background__stage").hide(), $(".background__flat").fadeIn(1e3), $(".sidebar-right__loupe").removeClass("loupe-stage"), $(".sidebar-right__loupe").removeClass("loupe-sizes"), $(".sidebar-right__loupe").addClass("loupe-furniture"), $(".flat__tagline").addClass("flat__tagline--active")
+})
+
+$(".sidebar-left__cat-item").on("click", function() {
+    $(".sidebar-left__cat-item").not(this).removeClass("sidebar-left__cat-item--active"), $(this).toggleClass("sidebar-left__cat-item--active"), $(this).hasClass("cat-flats-2") ? ($(".plan__map").css("opacity", 0), $(".plan__flats-2").css("opacity", 1)) : $(this).hasClass("cat-flats-3") ? ($(".plan__map").css("opacity", 0), $(".plan__free").css("opacity", 1)) : ($(".plan__map").css("opacity", 0), $(".plan__clean").css("opacity", 1))
+})
+
+$(".flat__tabs-item").on("click", function() {
+    $(".flat__tabs-item").not(this).removeClass("flat__tabs-item--active"), $(this).toggleClass("flat__tabs-item--active")
+})
+
+$("#flat").on("click", function() {
+    $("#size-img").hide(), $("#flat-img").show(), $(".background__stage").hide(), $(".background__flat").fadeIn(), $(".sidebar-right__loupe").removeClass("loupe-stage"), $(".sidebar-right__loupe").removeClass("loupe-sizes"), $(".sidebar-right__loupe").addClass("loupe-furniture")
+})
+
+$("#stage").on("click", function() {
+    $(".content").hide(), $("#size-img").hide(), $("#flat-img").show(), $("#stage-content").fadeIn(), $(".background__flat").hide(), $(".background__stage").fadeIn(), $(".sidebar-right__loupe").removeClass("loupe-furniture"), $(".sidebar-right__loupe").removeClass("loupe-sizes"), $(".sidebar-right__loupe").addClass("loupe-stage")
+})
+
+$("#size").on("click", function() {
+    $("#flat-img").hide(), $("#size-img").show(), $(".background__stage").hide(), $(".background__flat").fadeIn(), $(".sidebar-right__loupe").removeClass("loupe-stage"), $(".sidebar-right__loupe").removeClass("loupe-furniture"), $(".sidebar-right__loupe").addClass("loupe-sizes")
+})
+
+$(".flat-coords area").mouseenter(function() {
+    $(".flat__elements-item").eq($(".flat-coords area").index(this)).css("background-color", "hsla(31,36%,62%,.29)")
+}).mouseleave(function() {
+    $(".flat__elements-item").eq($(".flat-coords area").index(this)).css("background-color", "transparent")
+})
+
+flatMap()
+
+$(window).resize(function() {
+    flatMap()
+});
 
 $(() => {
     let floors = [
@@ -554,6 +620,8 @@ $(() => {
 })
 
 $(() => {
+    $('#modal__stage .modal__inner img').attr('src', $('.js-plan[data-floor="1"] > img').attr('src'))
+
     $('body').on('click', '.js-select-floor', function() {
         $(this).addClass('sidebar-right__item--active').siblings().removeClass('sidebar-right__item--active');
         $('.js-sidebar-left').hide();
@@ -565,6 +633,8 @@ $(() => {
             $('.js-sidebar-left[data-floor="' + $(this).data('floor-target') + '"]').addClass('aos-animate');
             $('.js-plan[data-floor="' + $(this).data('floor-target') + '"]').addClass('aos-animate');
         }, 1);
+
+        $('#modal__stage .modal__inner img').attr('src', $('.js-plan[data-floor="' +  $(this).data('floor-target')+ '"] > img').attr('src'))
     })
 
     let in_appartment = false;
@@ -636,6 +706,8 @@ $(() => {
             $('.js-plan-flat__img').hide();
             $('.js-plan-flat__img[data-type-img="' + $(this).data('type') + '"]').show();
         }
+
+        $(this).addClass('flat__tabs-item--active').siblings().removeClass('flat__tabs-item--active');
     })
 
     $('body').on('click', '.js-sidebar-left__cat-item', function() {
@@ -662,8 +734,6 @@ function right_side_template(floor, white_box = false) {
 }
 
 function plan_template(floor, flat) {
-    console.log(flat)
-
     return `
     <div class="plan js-plan" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="1000" data-floor="${floor}" ` + (floor == 1 ? ' style="display: block;"' : '') + `>
         <div class="plan-flat-bg` + (flat[0].status == 'sold' ? ' plan-flat-bg--is-sold' : '') + (flat[0].status == 'free' ? ' plan-flat-bg--is-free' : '') + (flat[0].status == 'booked' ? ' plan-flat-bg--is-booked' : '') + ` js-plan-flat-bg" data-plan-flat="1" data-plan-rooms="${flat[0].rooms}" style="
