@@ -81,10 +81,6 @@ $(document).ready(function () {
       e.preventDefault(),
         $("#modal__stage").css("display", "flex").hide().fadeIn();
     }),
-    $(document).on("click", ".loupe-furniture", function (e) {
-      e.preventDefault(),
-        $("#modal__flat-1").css("display", "flex").hide().fadeIn();
-    }),
     $(document).on("click", ".loupe-sizes", function (e) {
       e.preventDefault(),
         $("#modal__flat-2").css("display", "flex").hide().fadeIn();
