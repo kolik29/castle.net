@@ -632,7 +632,7 @@ $(() => {
             $('#modal__flat-2').css('display', 'flex').hide().fadeIn();
     })
 
-    $('#modal__stage .modal__inner img').attr('src', $('.js-plan[data-floor="1"] > img').attr('src'))
+    $('#modal__stage .modal__inner img').attr('src', 'https://kolik29.github.io/castle.net' + $('.js-plan[data-floor="1"] > img').attr('src'))
 
     $('body').on('click', '.js-select-floor', function() {
         $(this).addClass('sidebar-right__item--active').siblings().removeClass('sidebar-right__item--active');
@@ -646,7 +646,7 @@ $(() => {
             $('.js-plan[data-floor="' + $(this).data('floor-target') + '"]').addClass('aos-animate');
         }, 1);
 
-        $('#modal__stage .modal__inner img').attr('src', $('.js-plan[data-floor="' +  $(this).data('floor-target')+ '"] > img').attr('src'))
+        $('#modal__stage .modal__inner img').attr('src', 'https://kolik29.github.io/castle.net/' + $('.js-plan[data-floor="' +  $(this).data('floor-target')+ '"] > img').attr('src'))
     })
 
     let in_appartment = false;
@@ -685,8 +685,8 @@ $(() => {
     })
 
     $('body').on('click', '.js-plan-flat', function() {
-        $('#modal__flat-1 img').attr('src', `/img/flat-single/floors/${$(this).parent().data('floor')}/plan-flat-${$(this).data('plan-flat-target')}_1.svg`);
-        $('#modal__flat-2 img').attr('src', `/img/flat-single/floors/${$(this).parent().data('floor')}/plan-flat-${$(this).data('plan-flat-target')}_2.svg`);
+        $('#modal__flat-1 img').attr('src', `https://kolik29.github.io/castle.net/img/flat-single/floors/${$(this).parent().data('floor')}/plan-flat-${$(this).data('plan-flat-target')}_1.svg`);
+        $('#modal__flat-2 img').attr('src', `https://kolik29.github.io/castle.net/img/flat-single/floors/${$(this).parent().data('floor')}/plan-flat-${$(this).data('plan-flat-target')}_2.svg`);
     })
     
     $('body').on('mousemove', function(e) {
@@ -741,9 +741,9 @@ function right_side_template(floor, white_box = false) {
     <li class="sidebar-right__item js-select-floor` + (floor == 1 ? ' sidebar-right__item--active' : '') + `" data-floor-target="${floor}">
         <p class="sidebar-right__name">${floor} Этаж</p>`
         + (white_box ? '<p class="sidebar-right__descr">с отделкой White box</p>' : '') +
-        `<a class="sidebar-right__link" href="/documents/flat-single/floors/${floor}/4К для продажи.pdf" download>
+        `<a class="sidebar-right__link" href="https://kolik29.github.io/castle.net/documents/flat-single/floors/${floor}/4К для продажи.pdf" download>
             <span class="sidebar-right__link-icon"
-            ><img src="./img/common/pdf.svg" alt="" />
+            ><img src="https://kolik29.github.io/castle.net/img/common/pdf.svg" alt="" />
             </span>
             <span class="sidebar-right__link-text"
             >Скачать план этажа</span
@@ -763,7 +763,7 @@ function plan_template(floor, flat) {
         "></div>
         <img
             id="plan-img"
-            src="/img/flat-single/floors/${floor}/plan-floor.svg"
+            src="https://kolik29.github.io/castle.net/img/flat-single/floors/${floor}/plan-floor.svg"
         />`
         + `
         <div 
@@ -812,8 +812,8 @@ function left_side_tempalte(floor, flat) {
                 <p><span>${item.square} м²</span>Общая площадь</p>
             </div>
             <div class="sidebar-left__info-prices">
-                <p><span>15 046 140 * ₽</span>*При единовременной оплате</p>
-                <p><span>138 000 ₽</span>Стоимость за м²</p>
+                <p><span>0 * ₽</span>*При единовременной оплате</p>
+                <p><span>0 ₽</span>Стоимость за м²</p>
             </div>
         </div>
         `
@@ -898,7 +898,7 @@ function flat_template(floor, flat, flat_id) {
                 `</ul>
                 <p class="flat__height">Высота потолков 3.4 м</p>
                 <div class="flat__tagline">
-                    <img src="./img/flat-single/flat-single-tagline.png" alt="" />
+                    <img src="https://kolik29.github.io/castle.net/img/flat-single/flat-single-tagline.png" alt="" />
                 </div>
             </div>
             <div
@@ -934,12 +934,12 @@ function flat_template(floor, flat, flat_id) {
                 <img
                     data-type-img="flat"
                     class="js-plan-flat__img"
-                    src="/img/flat-single/floors/${floor}/plan-flat-${flat_id}_1.svg"
+                    src="https://kolik29.github.io/castle.net/img/flat-single/floors/${floor}/plan-flat-${flat_id}_1.svg"
                 />
                 <img
                     data-type-img="size"
                     class="js-plan-flat__img"
-                    src="/img/flat-single/floors/${floor}/plan-flat-${flat_id}_2.svg"
+                    src="https://kolik29.github.io/castle.net/img/flat-single/floors/${floor}/plan-flat-${flat_id}_2.svg"
                 />
                 <div class="sidebar-right__loupe loupe-furniture">
                     <div class="sidebar-right__loupe-circle">
@@ -967,21 +967,21 @@ function flat_template(floor, flat, flat_id) {
                     </div>
                 </div>
                 <div class="flat__price">
-                    <span>15 046 140 * ₽</span>
+                    <span>0 * ₽</span>
                     * При единовременной оплате
                 </div>
                 <div class="flat__area-price">
-                    <span>138 000 ₽</span>
+                    <span>0 ₽</span>
                     Стоимость за м²
                 </div>
                 <button class="flat__btn tobook">Забронировать</button>
                 <a class="flat__btn btn flat__btn--light btn--gold" href="#">Подобрать похожие</a>
                 <a class="flat__link" href="/documents/flat-single/floors/4/4К для продажи-1.pdf">
-                    <span class="flat__link-icon"><img src="./img/common/pdf.svg" alt="" /></span>
+                    <span class="flat__link-icon"><img src="https://kolik29.github.io/castle.net/img/common/pdf.svg" alt="" /></span>
                     <span class="flat__link-text">Скачать план квартиры</span>
                 </a>
                 <a class="flat__link" href="#">
-                    <span class="flat__link-icon flat__link-icon--share"><img src="./img/common/share.svg" alt="" /></span>
+                    <span class="flat__link-icon flat__link-icon--share"><img src="https://kolik29.github.io/castle.net/img/common/share.svg" alt="" /></span>
                     <span class="flat__link-text">Поделиться</span>
                 </a>
             </div>
