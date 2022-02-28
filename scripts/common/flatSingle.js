@@ -632,7 +632,7 @@ $(() => {
             $('#modal__flat-2').css('display', 'flex').hide().fadeIn();
     })
 
-    $('#modal__stage .modal__inner img').attr('src', 'https://kolik29.github.io/castle.net' + $('.js-plan[data-floor="1"] > img').attr('src'))
+    $('#modal__stage .modal__inner img').attr('src', $('.js-plan[data-floor="1"] > img').attr('src'))
 
     $('body').on('click', '.js-select-floor', function() {
         $(this).addClass('sidebar-right__item--active').siblings().removeClass('sidebar-right__item--active');
@@ -646,7 +646,7 @@ $(() => {
             $('.js-plan[data-floor="' + $(this).data('floor-target') + '"]').addClass('aos-animate');
         }, 1);
 
-        $('#modal__stage .modal__inner img').attr('src', 'https://kolik29.github.io/castle.net/' + $('.js-plan[data-floor="' +  $(this).data('floor-target')+ '"] > img').attr('src'))
+        $('#modal__stage .modal__inner img').attr('src', $('.js-plan[data-floor="' +  $(this).data('floor-target')+ '"] > img').attr('src'))
     })
 
     let in_appartment = false;
