@@ -756,10 +756,10 @@ function plan_template(floor, flat) {
     return `
     <div class="plan js-plan" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="1000" data-floor="${floor}" ` + (floor == 1 ? ' style="display: block;"' : '') + `>
         <div class="plan-flat-bg` + (flat[0].status == 'sold' ? ' plan-flat-bg--is-sold' : '') + (flat[0].status == 'free' ? ' plan-flat-bg--is-free' : '') + (flat[0].status == 'booked' ? ' plan-flat-bg--is-booked' : '') + ` js-plan-flat-bg" data-plan-flat="1" data-plan-rooms="${flat[0].rooms}" style="
-            -webkit-mask-image: url(/img/flat-single/floors/${floor}/plan-floor-1_bg.svg);
+            -webkit-mask-image: url(https://kolik29.github.io/castle.net/img/flat-single/floors/${floor}/plan-floor-1_bg.svg);
         "></div>
         <div class="plan-flat-bg` + (flat[1].status == 'sold' ? ' plan-flat-bg--is-sold' : '') + (flat[1].status == 'free' ? ' plan-flat-bg--is-free' : '') + (flat[1].status == 'booked' ? ' plan-flat-bg--is-booked' : '') + ` js-plan-flat-bg" data-plan-flat="2" data-plan-rooms="${flat[1].rooms}" style="
-            -webkit-mask-image: url(/img/flat-single/floors/${floor}/plan-floor-2_bg.svg);
+            -webkit-mask-image: url(https://kolik29.github.io/castle.net/img/flat-single/floors/${floor}/plan-floor-2_bg.svg);
         "></div>
         <img
             id="plan-img"
